@@ -33,7 +33,7 @@ npcConfig.voices = {
 	{ text = "This island is too small. I need sea water around me." }
 }
 
-npcConfig.moneyToNeedDonation = 500 --value in gold coins (ex: 500 = 500gp, 10000 = 10k)
+npcConfig.moneyToNeedDonation = 500000 --value in gold coins (ex: 500 = 500gp, 10000 = 10k)
 
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
@@ -188,7 +188,7 @@ local towns = {
 	}
 }
 
-local defaultTown = TOWNS_LIST.VENORE
+local defaultTown = TOWNS_LIST.THAIS
 local townNames = {all = "", free = "", premium = ""}
 
 -- Function to build town names strings and adds additional data to sailable/premium towns about

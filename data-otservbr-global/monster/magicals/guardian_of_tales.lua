@@ -57,9 +57,9 @@ monster.flags = {
 	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
-	canWalkOnEnergy = true,
+	canWalkOnEnergy = false,
 	canWalkOnFire = true,
-	canWalkOnPoison = true
+	canWalkOnPoison = false
 }
 
 monster.light = {
@@ -73,27 +73,28 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 10000, maxCount = 10},
-	{name = "book page", chance = 10000, maxCount = 5},
-	{name = "burnt scroll", chance = 10000, maxCount = 5},
-	{name = "glowing rune", chance = 10000, maxCount = 5},
-	{name = "small diamond", chance = 10000, maxCount = 5},
-	{name = "fire axe", chance = 250},
-	{name = "soul orb", chance = 260, maxCount = 5},
-	{name = "spellbook of warding", chance = 250},
-	{name = "wand of inferno", chance = 250},
-	{name = "fire sword", chance = 250},
-	{name = "magma coat", chance = 350},
-	{name = "magma legs", chance = 250},
-	{name = "piece of hellfire armor", chance = 500, maxCount = 5},
-	{id = 12600, chance = 10000, maxCount = 5} -- coal
+	{name = "Platinum Coin", chance = 84840, maxCount = 32 }, 
+	{name = "Small Diamond", chance = 57870, maxCount = 5 }, 
+	{name = "Book Page", chance = 44330, maxCount = 4 }, 
+	{name = "Glowing Rune", chance = 38570, maxCount = 8 }, 
+	{name = "Burnt Scroll", chance = 37720, maxCount = 1 }, 
+	{name = "Soul Orb", chance = 9610, maxCount = 1 }, 
+	{name = "Wand of Inferno", chance = 9540, maxCount = 1 }, 
+	{name = "Spellbook of Warding", chance = 5540, maxCount = 1 }, 
+	{name = "Piece of Hellfire Armor", chance = 5210, maxCount = 1 }, 
+	{name = "Fire Axe", chance = 4220, maxCount = 1 }, 
+	{name = "Fire Sword", chance = 1210, maxCount = 1 }, 
+	{name = "Magma Legs", chance = 920, maxCount = 1 }, 
+	{name = "Magma Coat", chance = 880, maxCount = 1 }, 
+	{id = 12600, chance = 260, maxCount = 1 }, --coal
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -200, maxDamage = -550},
-	{name ="combat", interval = 2000, chance = 13, type = COMBAT_ENERGYDAMAGE, minDamage = -200, maxDamage = -605, radius = 3, effect = CONST_ME_ENERGYAREA, target = false},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -375, maxDamage = -500, length = 5, spread = 3, effect = CONST_ME_MAGIC_RED, target = false},
-	{name ="combat", interval = 2000, chance = 12, type = COMBAT_FIREDAMAGE, minDamage = -400, maxDamage = -775, radius = 3, effect = CONST_ME_HITBYFIRE, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -600},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -1000, maxDamage = -1600, range = 5, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA, target = false},
+	{name ="combat", interval = 2000, chance = 12, type = COMBAT_FIREDAMAGE, minDamage = -600, maxDamage = -800, radius = 3, effect = CONST_ME_FIREAREA, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -500, maxDamage = -650, range = 5, radius = 3, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_HITBYFIRE, target = true},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -400, maxDamage = -750, length = 5, spread = 0, effect = CONST_ME_EXPLOSIONAREA, target = false},
 }
 
 monster.defenses = {

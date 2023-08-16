@@ -73,29 +73,35 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "small sapphire", chance = 8700, maxCount = 5},
-	{name = "platinum coin", chance = 87000, maxCount = 50},
-	{id = 28570, chance = 500, maxCount = 10}, -- glowing rune
-	{id = 3051, chance = 8700}, -- energy ring
-	{id = 7441, chance = 4000}, -- ice cube
-	{name = "shard", chance = 250, maxCount = 3},
-	{name = "glacier mask", chance = 250},
-	{name = "hailstorm rod", chance = 250},
-	{name = "life crystal", chance = 8700},
-	{name = "great mana potion", chance = 900, maxCount = 6},
-	{name = "golden mug", chance = 500},
-	{name = "glowing rune", chance = 500, maxCount = 10},
-	{id = 3051, chance = 8700}, -- energy ring
-	{name = "quill", chance = 250},
-	{name = "small diamond", chance = 500, maxCount = 5}
+	{name = "small sapphire", chance = 40000, maxCount = 12},
+	{name = "platinum coin", chance = 80000, maxCount = 21},
+	{id = 28570, chance = 80000, maxCount = 5}, -- glowing rune
+	{name = "ultimate mana potion", chance = 20000, maxCount = 2},
+	{id = 3051, chance = 15000}, -- energy ring
+	{id = 7441, chance = 15000}, -- ice cube
+	{name = "quill", chance = 15000},
+	{name = "glacier mask", chance = 10000},
+	{name = "small diamond", chance = 5000, maxCount = 12},
+	{name = "diamond sceptre", chance = 5000},
+	{name = "life crystal", chance = 4000},
+	{name = "Glacier Amulet", chance = 3000},
+	{name = "Crystal Mace", chance = 3000},
+	{name = "Golden Mug", chance = 3000},
+	{name = "Hailstorm Rod", chance = 3000},
+	{name = "Glacial Rod", chance = 1000},
+	{name = "Sapphire Hammer", chance = 1000},
+	{name = "Leviathan's Amulet", chance = 500},
+	{name = "Crystalline Armor", chance = 200},
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -100, maxDamage = -200},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_ICEDAMAGE, minDamage = -100, maxDamage = -200, range = 7, shootEffect = CONST_ANI_ICE, target = false},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -200, maxDamage = -780, range = 7, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICEATTACK, target = false},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -200, maxDamage = -275, length = 3, spread = 2, effect = CONST_ME_ICEATTACK, target = false},
-	{name ="combat", interval = 1000, chance = 12, type = COMBAT_ICEDAMAGE, minDamage = -230, maxDamage = -680, range = 7, radius = 3, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICETORNADO, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -400},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_ICEDAMAGE, minDamage = -600, maxDamage = -800, range = 7, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICEATTACK, target = false},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -800, maxDamage = -1200, length = 3, spread = 2, effect = CONST_ME_ICEATTACK, target = false},
+	{name ="combat", interval = 1000, chance = 12, type = COMBAT_ICEDAMAGE, minDamage = -600, maxDamage = -800, range = 7, radius = 3, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICETORNADO, target = false},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_ICEDAMAGE, minDamage = -600, maxDamage = -800, range = 5, radius = 3, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICEATTACK, target = true} 
+
+	
 }
 
 monster.defenses = {

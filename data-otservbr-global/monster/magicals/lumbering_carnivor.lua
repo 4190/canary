@@ -1,7 +1,7 @@
 local mType = Game.createMonsterType("Lumbering Carnivor")
 local monster = {}
 
-monster.description = "a lumbering carnivor"
+monster.description = "a Lumbering Carnivor"
 monster.experience = 1452
 monster.outfit = {
 	lookType = 1133,
@@ -76,32 +76,34 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 5},
-	{name = "blue glass plate", chance = 100000, maxCount = 3},
-	{id = 3264, chance = 15000}, -- sword
-	{name = "axe", chance = 14000},
-	{name = "ice rapier", chance = 12000},
-	{name = "glorious axe", chance = 6100},
-	{name = "blue robe", chance = 4600},
-	{name = "two handed sword", chance = 13000},
-	{name = "fur armor", chance = 5400},
-	{id = 281, chance = 3200}, -- giant shimmering pearl (green)
-	{name = "green crystal shard", chance = 3100},
-	{name = "violet gem", chance = 4000},
-	{name = "green gem", chance = 4800},
-	{name = "blue gem", chance = 4000},
-	{name = "focus cape", chance = 3000}
+	{name = "Platinum Coin", chance = 65129, maxCount = 3 }, 
+	{name = "Blue Glass Plate", chance = 20670, maxCount = 3 }, 
+	{name = "Axe", chance = 14940, maxCount = 1 }, 
+	{name = "Ice Rapier", chance = 7440, maxCount = 1 }, 
+	{id = 3264, chance = 5000}, -- sword
+	{id = 281, chance = 2000}, -- giant shimmering pearl (green)
+	{name = "Green Gem", chance = 1860, maxCount = 1 }, 
+	{name = "Two Handed Sword", chance = 1670, maxCount = 1 }, 
+	{name = "Violet Gem", chance = 1570, maxCount = 1 }, 
+	{name = "Glorious Axe", chance = 1470, maxCount = 1 }, 
+	{name = "Fur Armor", chance = 1030, maxCount = 1 }, 
+	{name = "Blue Gem", chance = 980, maxCount = 1 }, 
+	{name = "Green Crystal Shard", chance = 930, maxCount = 1 }, 
+	{name = "Blue Robe", chance = 780, maxCount = 1 }, 
+	{name = "Focus Cape", chance = 50, maxCount = 1 }, 
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -200, maxDamage = -500},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -100, maxDamage = -150, radius = 4, effect = CONST_ME_GROUNDSHAKER, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -300},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -0, maxDamage = -200, range = 7, shootEffect = CONST_ANI_CRYSTALLINEARROW, effect = CONST_ME_DRAWBLOOD, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -190, maxDamage = -240, range = 5, radius = 3, shootEffect = CONST_ANI_SMALLEARTH, effect = CONST_ME_EXPLOSIONAREA, target = true},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -180, maxDamage = -210, length = 5, spread = 0, effect = CONST_ME_SMOKE, target = false}, --beam
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -160, maxDamage = -190, length = 5, spread = 0, effect = CONST_ME_SMOKE, target = false}, --beam
 }
 
 monster.defenses = {
 	defense = 20,
-	armor = 71,
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_HEALING, minDamage = 150, maxDamage = 200, effect = CONST_ME_MAGIC_BLUE, target = false}
+	armor = 71
 }
 
 monster.elements = {

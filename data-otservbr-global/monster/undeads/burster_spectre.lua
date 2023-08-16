@@ -1,7 +1,7 @@
 local mType = Game.createMonsterType("Burster Spectre")
 local monster = {}
 
-monster.description = "a burster spectre"
+monster.description = "a Burster Spectre"
 monster.experience = 6000
 monster.outfit = {
 	lookType = 1122,
@@ -77,35 +77,34 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 7},
-	{name = "great spirit potion", chance = 100000, maxCount = 3},
-	{name = "protection amulet", chance = 15000},
-	{name = "life crystal", chance = 12050},
-	{name = "silver amulet", chance = 15000},
-	{name = "wand of voodoo", chance = 11050},
-	{name = "wand of cosmic energy", chance = 11800},
-	{name = "dragon necklace", chance = 16600},
-	{name = "stone skin amulet", chance = 8860},
-	{id = 30082, chance = 15600}, -- blue ectoplasm
-	{name = "glacier amulet", chance = 16890},
-	{name = "orb", chance = 18980},
-	{name = "hailstorm rod", chance = 17550},
-	{name = "elven amulet", chance = 1800},
-	{name = "garlic necklace", chance = 2640},
-	{name = "platinum amulet", chance = 2600},
-	{name = "mind stone", chance = 1800},
-	{name = "glacial rod", chance = 520},
-	{name = "shockwave amulet", chance = 620},
-	{name = "strange symbol", chance = 720},
-	{name = "hexagonal ruby", chance = 480}
+	{name = "Platinum Coin", chance = 75170, maxCount = 7 }, 
+	{name = "Great Spirit Potion", chance = 22620, maxCount = 3 }, 
+	{name = "Protection Amulet", chance = 7410, maxCount = 1 }, 
+	{name = "Life Crystal", chance = 7160, maxCount = 1 }, 
+	{name = "Wand of Voodoo", chance = 3290, maxCount = 1 }, 
+	{name = "Wand of Cosmic Energy", chance = 3070, maxCount = 1 }, 
+	{name = "Stone Skin Amulet", chance = 2190, maxCount = 1 }, 
+	{name = "Glacier Amulet", chance = 2160, maxCount = 1 }, 
+	{id = 30082, chance = 1960}, -- blue ectoplasm
+	{name = "Dragon Necklace", chance = 1710, maxCount = 1 }, 
+	{name = "Platinum Amulet", chance = 1420, maxCount = 1 }, 
+	{name = "Orb", chance = 1320, maxCount = 1 }, 
+	{name = "Hailstorm Rod", chance = 940, maxCount = 1 }, 
+	{name = "Hexagonal Ruby", chance = 670, maxCount = 1 }, 
+	{name = "Glacial Rod", chance = 570, maxCount = 1 }, 
+	{name = "Elven Amulet", chance = 510, maxCount = 1 }, 
+	{name = "Garlic Necklace", chance = 380, maxCount = 1 }, 
+	{name = "Shockwave Amulet", chance = 370, maxCount = 1 }, 
+	{name = "Mind Stone", chance = 170, maxCount = 1 }, 
+	{name = "Strange Symbol", chance = 100, maxCount = 1 }, 	
 }
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -400},
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_LIFEDRAIN, minDamage = -300, maxDamage = -400, radius = 4, effect = CONST_ME_MAGIC_BLUE, target = false},
-	{name ="combat", interval = 2000, chance = 25, type = COMBAT_ICEDAMAGE, minDamage = -370, maxDamage = -370, radius = 4, effect = CONST_ME_ICEAREA, target = true},
-	{name ="combat", interval = 2000, chance = 5200, type = COMBAT_ICEDAMAGE, minDamage = -300, maxDamage = -400, effect = CONST_ME_ICEATTACK, target = true},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_ICEDAMAGE, minDamage = -300, maxDamage = -300, length = 5, spread = 3, effect = CONST_ME_ICEATTACK, target = false}
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -370, maxDamage = -380, length = 5, spread = 3, effect = CONST_ME_ICEATTACK, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -300, maxDamage = -400, effect = CONST_ME_ICEATTACK, target = true},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -300, maxDamage = -400, radius = 4, effect = CONST_ME_ICEAREA, target = true},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -300, maxDamage = -400, radius = 4, effect = CONST_ME_MAGIC_BLUE, target = false},
 }
 
 monster.defenses = {

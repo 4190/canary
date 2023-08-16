@@ -1,7 +1,7 @@
 local mType = Game.createMonsterType("Crazed Winter Rearguard")
 local monster = {}
 
-monster.description = "a crazed winter rearguard"
+monster.description = "a Crazed Winter Rearguard"
 monster.experience = 4700
 monster.outfit = {
 	lookType = 1136,
@@ -29,7 +29,7 @@ monster.Bestiary = {
 monster.health = 5200
 monster.maxHealth = 5200
 monster.race = "blood"
-monster.corpse = 30127
+monster.corpse = 30126
 monster.speed = 200
 monster.manaCost = 0
 
@@ -76,32 +76,32 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 86000, maxCount = 5},
-	{name = "red crystal fragment", chance = 2000},
-	{id= 3039, chance = 330}, -- red gem
-	{name = "ice rapier", chance = 17200},
-	{name = "ultimate health potion", chance = 16850},
-	{name = "great spirit potion", chance = 15780},
+	{name = "Platinum Coin", chance = 85940, maxCount = 5 }, 
+	{name = "Ice Rapier", chance = 17230, maxCount = 1 }, 
+	{name = "Ultimate Health Potion", chance = 16850, maxCount = 1 }, 
+	{name = "Great Spirit Potion", chance = 15780, maxCount = 1 }, 
 	{id = 30058, chance = 9000, maxCount = 2}, -- ice flower
-	{name = "life crystal", chance = 7900},
-	{name = "dream essence egg", chance = 8750},
-	{name = "elven astral observer", chance = 7600},
-	{name = "glacier mask", chance = 6000},
-	{name = "moonlight rod", chance = 5400},
-	{name = "small enchanted sapphire", chance = 4700, maxCount = 7},
-	{name = "northwind rod", chance = 2360},
-	{name = "glacier amulet", chance = 2930},
-	{name = "hailstorm rod", chance = 2660},
-	{name = "glacier robe", chance = 1930},
-	{name = "cyan crystal fragment", chance = 2100},
-	{name = "elven amulet", chance = 1260},
-	{name = "blue gem", chance = 330}
+	{name = "Dream Essence Egg", chance = 8760, maxCount = 1 }, 
+	{name = "Life Crystal", chance = 7880, maxCount = 1 }, 
+	{name = "Elven Astral Observer", chance = 7610, maxCount = 1 }, 
+	{name = "Glacier Mask", chance = 5910, maxCount = 1 }, 
+	{name = "Moonlight Rod", chance = 5400, maxCount = 1 }, 
+	{name = "Small Enchanted Sapphire", chance = 4680, maxCount = 7 }, 
+	{name = "Glacier Amulet", chance = 2930, maxCount = 1 }, 
+	{name = "Hailstorm Rod", chance = 2660, maxCount = 1 }, 
+	{name = "Northwind Rod", chance = 2360, maxCount = 1 }, 
+	{name = "Cyan Crystal Fragment", chance = 2110, maxCount = 1 }, 
+	{name = "Glacier Robe", chance = 1930, maxCount = 1 }, 
+	{name = "Elven Amulet", chance = 1260, maxCount = 1 }, 
+	{name = "Blue Gem", chance = 330, maxCount = 1 }, 	
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -110, maxDamage = -400},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -200, maxDamage = -300, radius = 3, effect = CONST_ME_ICEAREA, target = true},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -250, maxDamage = -300, range = 7, shootEffect = CONST_ANI_ICE, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -400},
+	{name ="combat", interval = 2000, chance = 12, type = COMBAT_ICEDAMAGE, minDamage = -100, maxDamage = -300, radius = 3, effect = CONST_ME_ICEAREA, target = false}, 
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -100, maxDamage = -300, range = 5, radius = 3, shootEffect = CONST_ANI_ICE, effect = CONST_ME_ICEAREA, target = true},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -100, maxDamage = -300, length = 5, spread = 0, effect = CONST_ME_ICEAREA, target = false}, 
+	{name ="combat", interval = 2000, chance = 12, type = COMBAT_ICEDAMAGE, minDamage = -250, maxDamage = -400, radius = 3, effect = CONST_ME_ICEAREA, target = false}, 
 }
 
 monster.defenses = {

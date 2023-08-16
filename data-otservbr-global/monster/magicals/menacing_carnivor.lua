@@ -1,7 +1,7 @@
 local mType = Game.createMonsterType("Menacing Carnivor")
 local monster = {}
 
-monster.description = "a menacing carnivor"
+monster.description = "a Menacing Carnivor"
 monster.experience = 2112
 monster.outfit = {
 	lookType = 1138,
@@ -76,41 +76,43 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 6},
-	{name = "morning star", chance = 100000},
-	{name = "terra rod", chance = 15550},
-	{name = "small ruby", chance = 15000},
-	{name = "crystal sword", chance = 25000},
-	{name = "ultimate mana potion", chance = 50000},
-	{name = "wand of dragonbreath", chance = 15000},
-	{name = "machete", chance = 30000},
-	{name = "iron helmet", chance = 20000},
-	{name = "serpent sword", chance = 18000},
-	{name = "heavy machete", chance = 17000},
-	{name = "terra legs", chance = 6000},
-	{name = "knight legs", chance = 4500},
-	{name = "wand of starstorm", chance = 8000},
-	{name = "wand of voodoo", chance = 7100},
-	{name = "violet glass plate", chance = 6200},
-	{name = "small enchanted ruby", chance = 1400},
-	{name = "green crystal fragment", chance = 1600},
-	{name = "onyx chip", chance = 9800},
-	{name = "opal", chance = 2000},
-	{name = "tiger eye", chance = 3000},
-	{name = "wand of decay", chance = 8700}
+	{name = "Platinum Coin", chance = 64480, maxCount = 8 }, 
+	{name = "Morning Star", chance = 17220, maxCount = 1 }, 
+	{name = "Ultimate Mana Potion", chance = 9890, maxCount = 1 }, 
+	{name = "Violet Glass Plate", chance = 7120, maxCount = 1 }, 
+	{name = "Crystal Sword", chance = 4840, maxCount = 1 }, 
+	{name = "Terra Rod", chance = 4700, maxCount = 1 }, 
+	{name = "Small Ruby", chance = 4270, maxCount = 1 }, 
+	{name = "Green Crystal Fragment", chance = 3350, maxCount = 1 }, 
+	{name = "Onyx Chip", chance = 3060, maxCount = 1 }, 
+	{name = "Small Enchanted Ruby", chance = 2210, maxCount = 1 }, 
+	{name = "Terra Legs", chance = 2140, maxCount = 1 }, 
+	{name = "Knight Legs", chance = 1780, maxCount = 1 }, 
+	{name = "Wand of Voodoo", chance = 1710, maxCount = 1 }, 
+	{name = "Machete", chance = 1640, maxCount = 1 }, 
+	{name = "Heavy Machete", chance = 1280, maxCount = 1 }, 
+	{name = "Wand of Dragonbreath", chance = 1140, maxCount = 1 }, 
+	{name = "Wand of Starstorm", chance = 1070, maxCount = 1 }, 
+	{name = "Tiger Eye", chance = 1000, maxCount = 1 }, 
+	{name = "Iron Helmet", chance = 780, maxCount = 1 }, 
+	{name = "Serpent Sword", chance = 780, maxCount = 1 }, 
+	{name = "Opal", chance = 500, maxCount = 1 }, 
+	{name = "Wand of Decay", chance = 500, maxCount = 1 }, 
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -300, maxDamage = -450},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -100, maxDamage = -180, length = 4, spread = 3, effect = CONST_ME_SMOKE, target = false},
-	{name ="combat", interval = 2000, chance = 14, type = COMBAT_LIFEDRAIN, minDamage = -100, maxDamage = -200, length = 4, spread = 3, effect = CONST_ME_POISONAREA, target = false},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -150, maxDamage = -330, radius = 4, effect = CONST_ME_GROUNDSHAKER, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -370},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -0, maxDamage = -280, range = 7, shootEffect = CONST_ANI_WHIRLWINDSWORD, effect = CONST_ME_DRAWBLOOD, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -110, maxDamage = -180, length = 5, spread = 0, effect = CONST_ME_GROUNDSHAKER, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -160, maxDamage = -230, length = 7, spread = 3, effect = CONST_ME_GROUNDSHAKER, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -170, maxDamage = -250, length = 5, spread = 0, effect = CONST_ME_POISONAREA, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -140, maxDamage = -200, range = 5, radius = 3, shootEffect = CONST_ANI_SMALLEARTH, effect = CONST_ME_SMALLPLANTS, target = true},
+	{name ="combat", interval = 1500, chance = 12, type = COMBAT_EARTHDAMAGE, minDamage = -170, maxDamage = -230, radius = 3, effect = CONST_ME_POISONAREA, target = false},
 }
 
 monster.defenses = {
 	defense = 0,
 	armor = 68,
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_HEALING, minDamage = 150, maxDamage = 200, effect = CONST_ME_MAGIC_BLUE, target = false}
 }
 
 monster.reflects = {

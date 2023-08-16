@@ -58,7 +58,7 @@ monster.flags = {
 	healthHidden = false,
 	isBlockable = false,
 	canWalkOnEnergy = true,
-	canWalkOnFire = true,
+	canWalkOnFire = false,
 	canWalkOnPoison = false
 }
 
@@ -73,20 +73,29 @@ monster.voices = {
 }
 
 monster.loot = {
-	{id = 28569, chance = 10000, maxCount = 5}, -- book page
-	{id = 28570, chance = 10000, maxCount = 5}, -- glowing rune
-	{name = "small amethyst", chance = 10000, maxCount = 5},
-	{name = "flash arrow", chance = 10000, maxCount = 5},
-	{name = "lightning legs", chance = 250},
-	{name = "spellbook of warding", chance = 350},
-	{name = "ultimate health potion", chance = 10000, maxCount = 5},
-	{name = "ultimate mana potion", chance = 10000, maxCount = 5},
-	{name = "wand of starstorm", chance = 300}
+	{name = "Book Page", chance = 58200, maxCount = 6 }, 
+	{name = "Small Amethyst", chance = 55670, maxCount = 10 }, 
+	{name = "Glowing Rune", chance = 20300, maxCount = 4 }, 
+	{name = "Ultimate Health Potion", chance = 13240, maxCount = 1 }, 
+	{name = "Spellbook of Warding", chance = 9080, maxCount = 1 }, 
+	{name = "Ultimate Mana Potion", chance = 9080, maxCount = 1 }, 
+	{name = "Lightning Legs", chance = 7710, maxCount = 1 }, 
+	{name = "Flash Arrow", chance = 7510, maxCount = 15 }, 
+	{name = "Wand of Starstorm", chance = 7040, maxCount = 1 }, 
+	{name = "Lightning Pendant", chance = 4430, maxCount = 2 }, 
+	{name = "Platinum Amulet", chance = 2410, maxCount = 1 }, 
+	{name = "Might Ring", chance = 2360, maxCount = 1 }, 
+	{name = "Wand of Defiance", chance = 1250, maxCount = 1 }, 
+	{name = "Spellweaver's Robe", chance = 890, maxCount = 1 }, 
+	{name = "Shockwave Amulet", chance = 760, maxCount = 1 }, 
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -10, maxDamage = -550},
-	{name ="combat", interval = 1000, chance = 13, type = COMBAT_ENERGYDAMAGE, minDamage = -100, maxDamage = -555, radius = 3, effect = CONST_ME_ENERGYAREA, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -50},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -1200, maxDamage = -1600, range = 5, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYHIT, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -650, maxDamage = -800, radius = 3, effect = CONST_ME_ENERGYAREA, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -550, maxDamage = -650, range = 5, radius = 3, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA, target = true},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -650, maxDamage = -850, length = 5, spread = 0, effect = CONST_ME_ENERGYHIT, target = false},
 }
 
 monster.defenses = {

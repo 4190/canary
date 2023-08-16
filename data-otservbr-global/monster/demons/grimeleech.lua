@@ -77,55 +77,52 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 197},
-	{name = "platinum coin", chance = 100000, maxCount = 8},
-	{name = "great mana potion", chance = 34850, maxCount = 3},
-	{name = "great health potion", chance = 34290, maxCount = 3},
-	{name = "great spirit potion", chance = 30860, maxCount = 3},
-	{name = "flask of demonic blood", chance = 23400, maxCount = 3},
-	{name = "demonic essence", chance = 19240},
-	{name = "some grimeleech wings", chance = 19080},
-	{name = "fire mushroom", chance = 15360, maxCount = 5},
-	{name = "green mushroom", chance = 14800, maxCount = 5},
-	{name = "small diamond", chance = 11290, maxCount = 5},
-	{name = "small ruby", chance = 10750, maxCount = 5},
-	{name = "small topaz", chance = 9660, maxCount = 5},
-	{name = "small amethyst", chance = 9640, maxCount = 5},
-	{name = "underworld rod", chance = 6890},
-	{name = "wand of voodoo", chance = 4810},
-	{id= 3039, chance = 3930}, -- red gem
-	{name = "yellow gem", chance = 2900},
-	{name = "devil helmet", chance = 1360},
-	{name = "magma legs", chance = 1150},
-	{name = "demon shield", chance = 1010},
-	{name = "nightmare blade", chance = 930},
-	{name = "blue gem", chance = 780},
-	{name = "rift crossbow", chance = 720},
-	{name = "steel boots", chance = 640},
-	{name = "rift shield", chance = 620},
-	{name = "rift lance", chance = 580},
-	{name = "rift bow", chance = 370},
-	{name = "abyss hammer", chance = 210},
-	{name = "vile axe", chance = 180},
-	{name = "magic plate armor", chance = 60}
+	{name = "Gold Coin", chance = 93690, maxCount = 199 }, 
+	{name = "Platinum Coin", chance = 90310, maxCount = 8 }, 
+	{name = "Great Health Potion", chance = 24670, maxCount = 3 }, 
+	{name = "Great Mana Potion", chance = 24630, maxCount = 3 }, 
+	{name = "Great Spirit Potion", chance = 24300, maxCount = 3 }, 
+	{name = "Flask of Demonic Blood", chance = 18670, maxCount = 1 }, 
+	{name = "Demonic Essence", chance = 14820, maxCount = 1 }, 
+	{name = "Some Grimeleech Wings", chance = 13810, maxCount = 1 }, 
+	{name = "Fire Mushroom", chance = 11590, maxCount = 5 }, 
+	{name = "Green Mushroom", chance = 11100, maxCount = 5 }, 
+	{name = "Small Ruby", chance = 7640, maxCount = 5 }, 
+	{name = "Small Amethyst", chance = 7590, maxCount = 5 }, 
+	{name = "Small Topaz", chance = 7470, maxCount = 5 }, 
+	{name = "Small Diamond", chance = 7120, maxCount = 5 }, 
+	{name = "Underworld Rod", chance = 5650, maxCount = 1 }, 
+	{name = "Wand of Voodoo", chance = 3760, maxCount = 1 }, 
+	{name = "Yellow Gem", chance = 2590, maxCount = 1 }, 
+	{id = 3039, chance = 2500, maxCount = 1 }, --red gem
+	{name = "Magma Legs", chance = 910, maxCount = 1 }, 
+	{name = "Devil Helmet", chance = 700, maxCount = 1 }, 
+	{name = "Demon Shield", chance = 690, maxCount = 1 }, 
+	{name = "Blue Gem", chance = 670, maxCount = 1 }, 
+	{name = "Rift Lance", chance = 630, maxCount = 1 }, 
+	{name = "Nightmare Blade", chance = 570, maxCount = 1 }, 
+	{name = "Rift Shield", chance = 360, maxCount = 1 }, 
+	{name = "Rift Bow", chance = 330, maxCount = 1 }, 
+	{name = "Rift Crossbow", chance = 330, maxCount = 1 }, 
+	{name = "Steel Boots", chance = 230, maxCount = 1 }, 
+	{name = "Abyss Hammer", chance = 160, maxCount = 1 }, 
+	{name = "Vile Axe", chance = 140, maxCount = 1 }, 
+	{name = "Magic Plate Armor", chance = 90, maxCount = 1 }, 
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 70, attack = 80},
-	{name ="melee", interval = 2000, chance = 2, skill = 153, attack = 100},
-	{name ="combat", interval = 2000, chance = 14, type = COMBAT_PHYSICALDAMAGE, minDamage = 100, maxDamage = -565, range = 7, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA, target = true},
-	{name ="combat", interval = 2000, chance = 12, type = COMBAT_DEATHDAMAGE, minDamage = -150, maxDamage = -220, length = 8, spread = 3, target = false},
-	{name ="combat", interval = 2000, chance = 13, type = COMBAT_DEATHDAMAGE, minDamage = -225, maxDamage = -375, radius = 4, target = false},
-	{name ="combat", interval = 2000, chance = 9, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -300, length = 8, spread = 3, effect = CONST_ME_EXPLOSIONAREA, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -450},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -550, maxDamage = -950, length = 5, spread = 0, effect = CONST_ME_MAGIC_GREEN, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -350, maxDamage = -400, range = 5, radius = 3, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA, target = true},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -50, maxDamage = -200, range = 7, shootEffect = CONST_ANI_THROWINGSTAR, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = 0, maxDamage = -250, length = 5, spread = 3, effect = CONST_ME_MAGIC_RED, target = false},
+	{name ="drunk", interval = 2000, chance = 10, range = 5, radius = 3, shootEffect = CONST_ANI_GLOOTHSPEAR, effect = CONST_ME_STUN, target = true, duration = 5000},
 }
 
 monster.defenses = {
 	defense = 30,
 	armor = 30,
-	{name ="combat", interval = 2000, chance = 16, type = COMBAT_HEALING, minDamage = 130, maxDamage = 205, effect = CONST_ME_MAGIC_RED, target = false},
-	{name ="effect", interval = 2000, chance = 9, effect = CONST_ME_MAGIC_GREEN, target = false},
-	{name ="effect", interval = 2000, chance = 10, target = false},
-	{name ="speed", interval = 2000, chance = 12, speedChange = 532, effect = CONST_ME_MAGIC_RED, target = false, duration = 4000}
+	{name ="combat", interval = 2000, chance = 16, type = COMBAT_HEALING, minDamage = 200, maxDamage = 300, effect = CONST_ME_MAGIC_RED, target = false},
 }
 
 monster.elements = {

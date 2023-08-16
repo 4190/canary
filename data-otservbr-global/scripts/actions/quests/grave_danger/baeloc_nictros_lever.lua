@@ -1,7 +1,7 @@
 local config = {
 	bossName = "Sir Nictros",
 	bossName2 = "Sir Baeloc",
-	requiredLevel = 250,
+	requiredLevel = 8,
 	timeToFightAgain = 20, -- In hour
 	timeToDefeatBoss = 20, -- In minutes
 	playerPositions = {

@@ -645,7 +645,231 @@ npcConfig.shop = {
 	{ itemName = "yirkas' egg", clientId = 34102, sell = 280 },
 	{ itemName = "young lich worm", clientId = 31590, sell = 25000 },
 	{ itemName = "zaogun flag", clientId = 10413, sell = 600 },
-	{ itemName = "zaogun shoulderplates", clientId = 10414, sell = 150 }
+	{ itemName = "zaogun shoulderplates", clientId = 10414, sell = 150 },
+
+	{ itemName = "white Gem", clientId = 32769, sell = 12000 },
+	{ itemName = "blue gem", clientId = 3041, sell = 5000 },
+	{ itemName = "golden mug", clientId = 2903, sell = 250 },
+	{ itemName = "green gem", clientId = 3038, sell = 5000 },
+	{ itemName = "red gem", clientId = 3039, sell = 1000 },
+	{ itemName = "violet gem", clientId = 3036, sell = 10000 },
+	{ itemName = "white gem", clientId = 32769, sell = 12000 },
+	{ itemName = "yellow gem", clientId = 3037, sell = 1000 },
+	{ itemName = "condensed energy", clientId = 23501, sell = 260 },
+	{ itemName = "crystal bone", clientId = 23521, sell = 250 },
+	{ itemName = "crystallized anger", clientId = 23507, sell = 400 },
+	{ itemName = "curious matter", clientId = 23511, sell = 430 },
+	{ itemName = "dangerous proto matter", clientId = 23515, sell = 300 },
+	{ itemName = "energy ball", clientId = 23523, sell = 300 },
+	{ itemName = "energy vein", clientId = 23508, sell = 270 },
+	{ itemName = "frozen lightning", clientId = 23519, sell = 270 },
+	{ itemName = "glistening bone", clientId = 23522, sell = 250 },
+	{ itemName = "green bandage", clientId = 25697, sell = 180 },
+	{ itemName = "instable proto matter", clientId = 23516, sell = 300 },
+	{ itemName = "little bowl of myrrh", clientId = 25702, sell = 500 },
+	{ itemName = "odd organ", clientId = 23510, sell = 410 },
+	{ itemName = "plasma pearls", clientId = 23506, sell = 250 },
+	{ itemName = "plasmatic lightning", clientId = 23520, sell = 270 },
+	{ itemName = "single human eye", clientId = 25701, sell = 1000 },
+	{ itemName = "small energy ball", clientId = 23524, sell = 250 },
+	{ itemName = "solid rage", clientId = 23517, sell = 310 },
+	{ itemName = "spark sphere", clientId = 23518, sell = 350 },
+	{ itemName = "sparkion claw", clientId = 23502, sell = 290 },
+	{ itemName = "sparkion legs", clientId = 23504, sell = 310 },
+	{ itemName = "sparkion stings", clientId = 23505, sell = 280 },
+	{ itemName = "sparkion tail", clientId = 23503, sell = 300 },
+	{ itemName = "strange proto matter", clientId = 23513, sell = 300 },
+	{ itemName = "volatile proto matter", clientId = 23514, sell = 300 },
+
+	{ itemName = "amber", clientId = 32626, sell = 20000 },
+	{ itemName = "amber with a bug", clientId = 32624, sell = 41000 },
+	{ itemName = "amber with a dragonfly", clientId = 32625, sell = 56000 },
+	{ itemName = "ancient coin", clientId = 24390, sell = 350 },
+	{ itemName = "black pearl", clientId = 3027, buy = 560, sell = 280 },
+	{ itemName = "blue crystal shard", clientId = 16119, sell = 1500 },
+	{ itemName = "blue crystal splinter", clientId = 16124, sell = 400 },
+	{ itemName = "bronze goblet", clientId = 5807, buy = 2000 },
+	{ itemName = "brown crystal splinter", clientId = 16123, sell = 400 },
+	{ itemName = "coral brooch", clientId = 24391, sell = 750 },
+	{ itemName = "crunor idol", clientId = 30055, sell = 30000 },
+	{ itemName = "cyan crystal fragment", clientId = 16125, sell = 800 },
+	{ itemName = "dragon figurine", clientId = 30053, sell = 45000 },
+	{ itemName = "gemmed figurine", clientId = 24392, sell = 3500 },
+	{ itemName = "giant amethyst", clientId = 30061, sell = 60000 },
+	{ itemName = "giant emerald", clientId = 30060, sell = 90000 },
+	{ itemName = "giant ruby", clientId = 30059, sell = 70000 },
+	{ itemName = "giant sapphire", clientId = 30061, sell = 50000 },
+	{ itemName = "giant shimmering pearl", clientId = 281, sell = 3000 }, -- green
+	{ itemName = "giant shimmering pearl", clientId = 282, sell = 3000 }, -- brown
+	{ itemName = "giant topaz", clientId = 32623, sell = 80000 },
+	{ itemName = "gold ingot", clientId = 9058, sell = 5000 },
+	{ itemName = "gold nugget", clientId = 3040, sell = 850 },
+	{ itemName = "golden amulet", clientId = 3013, buy = 6600 },
+	{ itemName = "golden goblet", clientId = 5805, buy = 5000 },
+	{ itemName = "green crystal fragment", clientId = 16127, sell = 800 },
+	{ itemName = "green crystal shard", clientId = 16121, sell = 1500 },
+	{ itemName = "green crystal splinter", clientId = 16122, sell = 400 },
+	{ itemName = "lion figurine", clientId = 33781, sell = 10000 },
+	{ itemName = "onyx chip", clientId = 22193, sell = 400 },
+	{ itemName = "opal", clientId = 22194, sell = 500 },
+	{ itemName = "ornate locket", clientId = 30056, sell = 18000 },
+	{ itemName = "prismatic quartz", clientId = 24962, sell = 450 },
+	{ itemName = "red crystal fragment", clientId = 16126, sell = 800 },
+	{ itemName = "ruby necklace", clientId = 3016, buy = 3560 },
+	{ itemName = "silver goblet", clientId = 5806, buy = 3000 },
+	{ itemName = "skull coin", clientId = 32583, sell = 12000 },
+	{ itemName = "small amethyst", clientId = 3033, buy = 400, sell = 200 },
+	{ itemName = "small diamond", clientId = 3028, buy = 600, sell = 300 },
+	{ itemName = "small emerald", clientId = 3032, buy = 500, sell = 250 },
+	{ itemName = "small enchanted amethyst", clientId = 678, sell = 200 },
+	{ itemName = "small enchanted emerald", clientId = 677, sell = 250 },
+	{ itemName = "small enchanted ruby", clientId = 676, sell = 250 },
+	{ itemName = "small enchanted sapphire", clientId = 675, sell = 250 },
+	{ itemName = "small ruby", clientId = 3030, buy = 500, sell = 250 },
+	{ itemName = "small sapphire", clientId = 3029, buy = 500, sell = 250 },
+	{ itemName = "small topaz", clientId = 9057, sell = 200 },
+	{ itemName = "tiger eye", clientId = 24961, sell = 350 },
+	{ itemName = "unicorn figurine", clientId = 30054, sell = 50000 },
+	{ itemName = "violet crystal shard", clientId = 16120, sell = 1500 },
+	{ itemName = "white silk flower", clientId = 34008, sell = 9000 },
+	{ itemName = "wedding ring", clientId = 3004, buy = 990, sell = 100 },
+	{ itemName = "white pearl", clientId = 3026, buy = 320, sell = 160 },
+	{ itemName = "prismatic quartz", clientId = 24962, sell = 450 },
+	{
+		itemName = "ancient stone",
+		clientId = 9632,
+		sell = 200
+		}, {
+		itemName = "battle stone",
+		clientId = 11447,
+		sell = 290
+		}, {
+		itemName = "broken gladiator shield",
+		clientId = 9656,
+		sell = 190
+		}, {
+		itemName = "coal",
+		clientId = 12600,
+		sell = 20
+		}, {
+		itemName = "crystal of balance",
+		clientId = 9028,
+		sell = 1000
+		}, {
+		itemName = "crystal of focus",
+		clientId = 9027,
+		sell = 2000
+		}, {
+		itemName = "crystal of power",
+		clientId = 9067,
+		sell = 3000
+		}, {
+		itemName = "crystal pedestal",
+		clientId = 9063,
+		sell = 500
+		}, {
+		itemName = "crystalline spikes",
+		clientId = 16138,
+		sell = 440
+		}, {
+		itemName = "flintstone",
+		clientId = 12806,
+		sell = 800
+		}, {
+		itemName = "gear crystal",
+		clientId = 9655,
+		sell = 200
+		}, {
+		itemName = "gear wheel",
+		clientId = 8775,
+		sell = 500
+		}, {
+		itemName = "huge chunk of crude iron",
+		clientId = 5892,
+		sell = 15000
+		}, {
+		itemName = "magma clump",
+		clientId = 16130,
+		sell = 570
+		}, {
+		itemName = "metal spike",
+		clientId = 10298,
+		sell = 320
+		}, {
+		itemName = "piece of draconian steel",
+		clientId = 5889,
+		sell = 3000
+		}, {
+		itemName = "piece of hell steel",
+		clientId = 5888,
+		sell = 500
+		}, {
+		itemName = "piece of hellfire armor",
+		clientId = 9664,
+		sell = 550
+		}, {
+		itemName = "piece of royal steel",
+		clientId = 5887,
+		sell = 10000
+		}, {
+		itemName = "pulverized ore",
+		clientId = 16133,
+		sell = 400
+		}, {
+		itemName = "shiny stone",
+		clientId = 10310,
+		sell = 500
+		}, {
+		itemName = "stone nose",
+		clientId = 16137,
+		sell = 590
+		}, {
+		itemName = "sulphurous stone",
+		clientId = 10315,
+		sell = 100
+		}, {
+		itemName = "vein of ore",
+		clientId = 16135,
+		sell = 330
+		}, {
+		itemName = "war crystal",
+		clientId = 9654,
+		sell = 460
+},
+	{ itemName = "giant pacifier", clientId = 21199, sell = 170 },
+	{ itemName = "glob of glooth", clientId = 21182, sell = 125 },
+	{ itemName = "glooth injection tube", clientId = 21103, sell = 350 },
+	{ itemName = "metal jaw", clientId = 21193, sell = 260 },
+	{ itemName = "metal toe", clientId = 21198, sell = 430 },
+	{ itemName = "mooh'tah shell", clientId = 21202, sell = 110 },
+	{ itemName = "moohtant horn", clientId = 21200, sell = 140 },
+	{ itemName = "necromantic rust", clientId = 21196, sell = 390 },
+	{ itemName = "poisoned fang", clientId = 21195, sell = 130 },
+	{ itemName = "seacrest hair", clientId = 21801, sell = 260 },
+	{ itemName = "seacrest pearl", clientId = 21747, sell = 400 },
+	{ itemName = "seacrest scale", clientId = 21800, sell = 150 },
+	{ itemName = "slime heart", clientId = 21194, sell = 160 },
+	{ itemName = "slimy leaf tentacle", clientId = 21197, sell = 320 },
+	{ itemName = "bamboo stick", clientId = 11445, sell = 30 },
+	{ itemName = "bundle of cursed straw", clientId = 9688, sell = 800 },
+	{ itemName = "carniphila seeds", clientId = 10300, sell = 50 },
+	{ itemName = "dark mushroom", clientId = 3728, sell = 100 },
+	{ itemName = "dung ball", clientId = 14225, sell = 130 },
+	{ itemName = "fire mushroom", clientId = 3731, sell = 200 },
+	{ itemName = "goat grass", clientId = 3674, sell = 50 },
+	{ itemName = "grave flower", clientId = 3661, sell = 25 },
+	{ itemName = "green mushroom", clientId = 3732, sell = 100 },
+	{ itemName = "lump of dirt", clientId = 9692, sell = 10 },
+	{ itemName = "lump of earth", clientId = 10305, sell = 130 },
+	{ itemName = "nettle blossom", clientId = 10314, sell = 75 },
+	{ itemName = "nettle spit", clientId = 11476, sell = 25 },
+	{ itemName = "orange mushroom", clientId = 3726, sell = 150 },
+	{ itemName = "powder herb", clientId = 3739, sell = 10 },
+	{ itemName = "seeds", clientId = 647, sell = 150 },
+	{ itemName = "swamp grass", clientId = 9686, sell = 20 },
+	{ itemName = "troll green", clientId = 3741, sell = 25 },
+	{ itemName = "trollroot", clientId = 11515, sell = 50 },
+	{ itemName = "wood mushroom", clientId = 3727, sell = 15 },
 }
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)

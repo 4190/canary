@@ -118,7 +118,9 @@ npcConfig.shop = {
 	{ itemName = "ultimate spirit potion", clientId = 23374, buy = 438 },
 	{ itemName = "vial", clientId = 2874, sell = 5 },
 	{ itemName = "vortex bolt", clientId = 14252, buy = 6 },
-	{ itemName = "wild growth rune", clientId = 3156, buy = 160 }
+	{ itemName = "wild growth rune", clientId = 3156, buy = 160 },
+
+	{ itemName = "avalanche rune", clientId = 3161, buy = 57 },
 }
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)

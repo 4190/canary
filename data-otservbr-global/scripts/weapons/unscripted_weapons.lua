@@ -1,242 +1,5 @@
 local weapons = {
 	{
-		-- grand sanguine rod
-		itemId = 43886,
-		type = WEAPON_WAND,
-		wandType = "earth",
-		level = 600,
-		mana = 20,
-		damage = {100, 124},
-		unproperly = true,
-		vocation = {
-			{"Druid", true},
-			{"Elder Druid"}
-		}
-	},
-	{
-		-- sanguine rod
-		itemId = 43885,
-		type = WEAPON_WAND,
-		wandType = "earth",
-		level = 600,
-		mana = 20,
-		damage = {100, 124},
-		unproperly = true,
-		vocation = {
-			{"Druid", true},
-			{"Elder Druid"}
-		}
-	},
-	{
-		-- grand sanguine coil
-		itemId = 43883,
-		type = WEAPON_WAND,
-		wandType = "energy",
-		level = 250,
-		mana = 21,
-		damage = {103, 125},
-		unproperly = true,
-		vocation = {
-			{"Sorcerer", true},
-			{"Master Sorcerer"}
-		}
-	},
-	{
-		-- sanguine coil
-		itemId = 43882,
-		type = WEAPON_WAND,
-		wandType = "fire",
-		level = 250,
-		mana = 21,
-		damage = {113, 125},
-		unproperly = true,
-		vocation = {
-			{"Sorcerer", true},
-			{"Master Sorcerer"}
-		}
-	},
-	{
-		-- grand sanguine crossbow
-		itemId = 43880,
-		type = WEAPON_DISTANCE,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Paladin", true},
-			{"Royal Paladin"}
-		}
-	},
-	{
-		-- sanguine crossbow
-		itemId = 43879,
-		type = WEAPON_DISTANCE,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Paladin", true},
-			{"Royal Paladin"}
-		}
-	},
-	{
-		-- grand sanguine bow
-		itemId = 43878,
-		type = WEAPON_DISTANCE,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Paladin", true},
-			{"Royal Paladin"}
-		}
-	},
-	{
-		-- sanguine bow
-		itemId = 43877,
-		type = WEAPON_DISTANCE,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Paladin", true},
-			{"Royal Paladin"}
-		}
-	},
-	{
-		-- grand sanguine battleaxe
-		itemId = 43875,
-		type = WEAPON_AXE,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Knight", true},
-			{"Elite Knight"}
-		}
-	},
-	{
-		-- sanguine battleaxe
-		itemId = 43874,
-		type = WEAPON_AXE,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Knight", true},
-			{"Elite Knight"}
-		}
-	},
-	{
-		-- grand sanguine bludgeon
-		itemId = 43873,
-		type = WEAPON_CLUB,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Knight", true},
-			{"Elite Knight"}
-		}
-	},
-	{
-		-- sanguine bludgeon
-		itemId = 43872,
-		type = WEAPON_CLUB,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Knight", true},
-			{"Elite Knight"}
-		}
-	},
-	{
-		-- grand sanguine razor
-		itemId = 43871,
-		type = WEAPON_SWORD,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Knight", true},
-			{"Elite Knight"}
-		}
-	},
-	{
-		-- sanguine razor
-		itemId = 43870,
-		type = WEAPON_SWORD,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Knight", true},
-			{"Elite Knight"}
-		}
-	},
-	{
-		-- grand sanguine hatchet
-		itemId = 43869,
-		type = WEAPON_AXE,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Knight", true},
-			{"Elite Knight"}
-		}
-	},
-	{
-		-- sanguine hatchet
-		itemId = 43868,
-		type = WEAPON_AXE,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Knight", true},
-			{"Elite Knight"}
-		}
-	},
-	{
-		-- grand sanguine cudgel
-		itemId = 43867,
-		type = WEAPON_CLUB,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Knight", true},
-			{"Elite Knight"}
-		}
-	},
-	{
-		-- sanguine cudgel
-		itemId = 43866,
-		type = WEAPON_CLUB,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Knight", true},
-			{"Elite Knight"}
-		}
-	},
-	{
-		-- grand sanguine blade
-		itemId = 43865,
-		type = WEAPON_SWORD,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Knight", true},
-			{"Elite Knight"}
-		}
-	},
-	{
-		-- sanguine blade
-		itemId = 43864,
-		type = WEAPON_SWORD,
-		level = 600,
-		unproperly = true,
-		vocation = {
-			{"Knight", true},
-			{"Elite Knight"}
-		}
-	},
-	{
-		-- broken macuahuitl
-		itemid = 40530,
-		type = WEAPON_SWORD
-	},
-	{
 		-- naga rod
 		itemId = 39163,
 		type = WEAPON_WAND,
@@ -2298,7 +2061,6 @@ local weapons = {
 		type = WEAPON_AXE,
 		level = 75,
 		unproperly = true,
-		action = "removecharge",
 		vocation = {
 			{"Knight", true},
 			{"Elite Knight"}
@@ -2310,7 +2072,6 @@ local weapons = {
 		type = WEAPON_SWORD,
 		level = 75,
 		unproperly = true,
-		action = "removecharge",
 		vocation = {
 			{"Knight", true},
 			{"Elite Knight"}
@@ -2533,7 +2294,7 @@ local weapons = {
 		}
 	},
 	{
-		-- crude umbral chopper
+		-- guardian halberd
 		itemid = 20073,
 		type = WEAPON_AXE,
 		level = 75,
@@ -4695,7 +4456,11 @@ local weapons = {
 		itemid = 3340,
 		type = WEAPON_CLUB,
 		level = 70,
-		unproperly = true
+		unproperly = true,
+		vocation = {
+			{"Knight", true},
+			{"Elite Knight"}
+		}
 	},
 	{
 		-- djinn blade
@@ -4760,7 +4525,11 @@ local weapons = {
 		itemid = 3331,
 		type = WEAPON_AXE,
 		level = 70,
-		unproperly = true
+		unproperly = true,
+		vocation = {
+			{"Knight", true},
+			{"Elite Knight"}
+		}
 	},
 	{
 		-- heavy machete
@@ -5054,7 +4823,11 @@ local weapons = {
 		-- ice rapier
 		itemid = 3284,
 		type = WEAPON_SWORD,
-		action = "removecharge"
+		action = "removecharge",
+		vocation = {
+			{"Knight", true},
+			{"Elite Knight"}
+		}
 	},
 	{
 		-- carlin sword
@@ -5110,7 +4883,7 @@ local weapons = {
 		-- spear
 		itemid = 3277,
 		type = WEAPON_MISSILE,
-		breakchance = 3
+		--breakchance = 3
 	},
 	{
 		-- hatchet
@@ -5198,7 +4971,7 @@ local weapons = {
 	},
 	{
 		-- giant smithhammer
-		itemid = 3208,
+		itemid = 12510,
 		type = WEAPON_CLUB
 	},
 	{
@@ -5341,7 +5114,7 @@ local weapons = {
 		-- small stone
 		itemid = 1781,
 		type = WEAPON_MISSILE,
-		breakchance = 3
+		--breakchance = 3
 	}
 }
 

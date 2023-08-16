@@ -9,8 +9,8 @@ function rascacoonShortcut.onUse(creature, item, position, fromPosition)
 	if not player then
 		return false
 	end
-	if player:getLevel() < 200 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need at least level 200 to enter.")
+	if player:getLevel() < 8 then
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You need at least level 8 to enter.")
 		player:teleportTo(fromPosition, true)
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 		return false

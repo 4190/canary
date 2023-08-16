@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <items>
 	<!-- Liquids -->
 	<!-- Fluid type 0 is same as water (id="1") -->
@@ -5059,9 +5059,9 @@
 		<attribute key="showduration" value="1"/>
 		<attribute key="showAttributes" value="1"/>
 		<attribute key="manaticks" value="6000"/>
-		<attribute key="managain" value="8"/>
+		<attribute key="managain" value="2"/>
 		<attribute key="healthticks" value="6000"/>
-		<attribute key="healthgain" value="2"/>
+		<attribute key="healthgain" value="1"/>
 		<attribute key="duration" value="1200"/>
 		<attribute key="transformdeequipto" value="3052"/>
 		<attribute key="decayTo" value="0"/>
@@ -5141,9 +5141,9 @@
 		<attribute key="showduration" value="1"/>
 		<attribute key="showAttributes" value="1"/>
 		<attribute key="manaticks" value="6000"/>
-		<attribute key="managain" value="24"/>
+		<attribute key="managain" value="6"/>
 		<attribute key="healthticks" value="6000"/>
-		<attribute key="healthgain" value="6"/>
+		<attribute key="healthgain" value="2"/>
 		<attribute key="duration" value="450"/>
 		<attribute key="transformdeequipto" value="3098"/>
 		<attribute key="decayTo" value="0"/>
@@ -5878,6 +5878,13 @@
 		<attribute key="attack" value="55"/>
 		<attribute key="defense" value="40"/>
 		<attribute key="weight" value="4300"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="elemental damage" value="3"/>
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost sword" value="3"/>
+		</attribute>
 	</item>
 	<item id="3279" article="a" name="war hammer">
 		<attribute key="weaponType" value="club"/>
@@ -7611,7 +7618,7 @@
 		<attribute key="managain" value="12"/>
 		<attribute key="healthticks" value="6000"/>
 		<attribute key="healthgain" value="3"/>
-		<attribute key="duration" value="14400"/>
+		<attribute key="duration" value="43200"/>
 		<attribute key="transformdeequipto" value="6529"/>
 		<attribute key="decayTo" value="6530"/>
 		<attribute key="weight" value="800"/>
@@ -34269,6 +34276,15 @@
 		<attribute key="skillsword" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22519" article="a" name="fireheart hauberk">
 		<attribute key="absorbpercentice" value="-8"/>
@@ -34276,6 +34292,15 @@
 		<attribute key="skillaxe" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22520" article="a" name="fireheart platemail">
 		<attribute key="absorbpercentice" value="-8"/>
@@ -34283,6 +34308,15 @@
 		<attribute key="skillclub" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22521" article="an" name="earthheart cuirass">
 		<attribute key="absorbpercentpoison" value="8"/>
@@ -34290,6 +34324,15 @@
 		<attribute key="skillsword" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22522" article="an" name="earthheart hauberk">
 		<attribute key="absorbpercentpoison" value="8"/>
@@ -34297,6 +34340,15 @@
 		<attribute key="skillaxe" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22523" article="an" name="earthheart platemail">
 		<attribute key="absorbpercentpoison" value="8"/>
@@ -34304,6 +34356,15 @@
 		<attribute key="skillclub" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22524" article="a" name="thunderheart cuirass">
 		<attribute key="absorbpercentpoison" value="-8"/>
@@ -34311,6 +34372,15 @@
 		<attribute key="skillsword" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22525" article="a" name="thunderheart hauberk">
 		<attribute key="absorbpercentpoison" value="-8"/>
@@ -34318,6 +34388,15 @@
 		<attribute key="skillaxe" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22526" article="a" name="thunderheart platemail">
 		<attribute key="absorbpercentpoison" value="-8"/>
@@ -34325,6 +34404,15 @@
 		<attribute key="skillclub" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+			<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22527" article="a" name="frostheart cuirass">
 		<attribute key="absorbpercentice" value="8"/>
@@ -34332,6 +34420,15 @@
 		<attribute key="skillsword" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22528" article="a" name="frostheart hauberk">
 		<attribute key="absorbpercentice" value="8"/>
@@ -34339,6 +34436,15 @@
 		<attribute key="skillaxe" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22529" article="a" name="frostheart platemail">
 		<attribute key="absorbpercentice" value="8"/>
@@ -34346,6 +34452,15 @@
 		<attribute key="skillclub" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22530" article="a" name="firesoul tabard">
 		<attribute key="absorbpercentice" value="-8"/>
@@ -34353,6 +34468,15 @@
 		<attribute key="skilldist" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22531" article="an" name="earthsoul tabard">
 		<attribute key="absorbpercentpoison" value="8"/>
@@ -34360,6 +34484,15 @@
 		<attribute key="skilldist" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22532" article="a" name="thundersoul tabard">
 		<attribute key="absorbpercentpoison" value="-8"/>
@@ -34367,6 +34500,15 @@
 		<attribute key="skilldist" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22533" article="a" name="frostsoul tabard">
 		<attribute key="absorbpercentice" value="8"/>
@@ -34374,6 +34516,15 @@
 		<attribute key="skilldist" value="4"/>
 		<attribute key="armor" value="18"/>
 		<attribute key="weight" value="14500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22534" article="a" name="firemind raiment">
 		<attribute key="absorbpercentice" value="-8"/>
@@ -34381,6 +34532,15 @@
 		<attribute key="magiclevelpoints" value="4"/>
 		<attribute key="armor" value="15"/>
 		<attribute key="weight" value="5500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22535" article="an" name="earthmind raiment">
 		<attribute key="absorbpercentpoison" value="8"/>
@@ -34388,6 +34548,15 @@
 		<attribute key="magiclevelpoints" value="4"/>
 		<attribute key="armor" value="15"/>
 		<attribute key="weight" value="5500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22536" article="a" name="thundermind raiment">
 		<attribute key="absorbpercentpoison" value="-8"/>
@@ -34395,6 +34564,15 @@
 		<attribute key="magiclevelpoints" value="4"/>
 		<attribute key="armor" value="15"/>
 		<attribute key="weight" value="5500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item id="22537" article="a" name="frostmind raiment">
 		<attribute key="absorbpercentice" value="8"/>
@@ -34402,6 +34580,15 @@
 		<attribute key="magiclevelpoints" value="4"/>
 		<attribute key="armor" value="15"/>
 		<attribute key="weight" value="5500"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+		</attribute>
 	</item>
 	<item fromid="22538" toid="22541" name="stone floor"/>
 	<item fromid="22542" toid="22543" name="dry floor"/>
@@ -34795,6 +34982,12 @@
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="31"/>
 		<attribute key="weight" value="5900"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost sword" value="3"/>
+		</attribute>
 	</item>
 	<item id="22761" article="a" name="vortex">
 		<attribute key="type" value="teleport"/>

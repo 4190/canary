@@ -89,8 +89,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		return false
 	end
 
-	if table.contains({"soft boots", "repair", "soft", "boots"}, message) then
-		npcHandler:say("Do you want to repair your worn soft boots for 10000 gold coins?", npc, creature)
+	if isInArray({"soft boots", "repair", "soft", "boots"}, message) then
+		npcHandler:say("Do you want to repair your worn soft boots for 30000 gold coins?", npc, creature)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, 'yes') and npcHandler:getTopic(playerId) == 1 then
 		npcHandler:setTopic(playerId, 0)
@@ -99,7 +99,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			return true
 		end
 
-		if not player:removeMoneyBank(10000) then
+		if not player:removeMoneyBank(30000) then
 			npcHandler:say("Sorry, you don't have enough gold.", npc, creature)
 			return true
 		end

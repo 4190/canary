@@ -1,6 +1,6 @@
 local config = {
 	bossName = "Tentugly's Head",
-	requiredLevel = 250,
+	requiredLevel = 8,
 	timeToFightAgain = 20, -- In hour
 	timeToDefeatBoss = 20, -- In minutes
 	playerPositions = {

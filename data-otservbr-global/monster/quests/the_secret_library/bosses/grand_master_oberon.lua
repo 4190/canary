@@ -88,9 +88,9 @@ monster.loot = {
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1200},
-	{name ="combat", interval = 6000, chance = 80, type = COMBAT_HOLYDAMAGE, minDamage = -1000, maxDamage = -2250, length = 8, spread = 3, effect = CONST_ME_HOLYAREA, target = false},
-	{name ="combat", interval = 1000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -820, maxDamage = -1450, radius = 5, effect = CONST_ME_HITAREA, target = false},
-	{name ="combat", interval = 2000, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -860, maxDamage = -1500, range = 7, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = false}
+	{name ="combat", interval = 6000, chance = 80, type = COMBAT_HOLYDAMAGE, minDamage = -500, maxDamage = -700, length = 8, spread = 0, effect = CONST_ME_HOLYAREA, target = false},
+	{name ="combat", interval = 1000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -500, maxDamage = -900, radius = 5, effect = CONST_ME_HITAREA, target = false},
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -400, maxDamage = -600, range = 7, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = false}
 }
 
 monster.defenses = {
@@ -148,17 +148,16 @@ mType.onSay = function(monster, creature, type, message)
 	local exhaust = GrandMasterOberonConfig.Storage.Exhaust
 	if creature:isPlayer() and monster:getStorageValue(exhaust) <= os.time() then
 		message = message:lower()
-
 		monster:setStorageValue(exhaust, os.time() + 1)
-		local asking_storage = monster:getStorageValue(GrandMasterOberonConfig.Storage.Asking)
-		local oberonMessagesTable = GrandMasterOberonResponses[asking_storage];
-
-		if oberonMessagesTable then
-			if message == oberonMessagesTable.msg:lower() or message == oberonMessagesTable.msg2:lower() then
-				monster:say("GRRRAAANNGH!", TALKTYPE_MONSTER_SAY)
-				monster:unregisterEvent('OberonImmunity')
-			else
-				monster:say("HAHAHAHA!", TALKTYPE_MONSTER_SAY)
+		for i, v in pairs(GrandMasterOberonResponses) do
+			if message == v.msg:lower() then
+				local asking_storage = monster:getStorageValue(GrandMasterOberonConfig.Storage.Asking)
+				if GrandMasterOberonAsking[i].msg:lower() == GrandMasterOberonAsking[asking_storage].msg:lower() then
+					monster:say("GRRRAAANNGH!", TALKTYPE_MONSTER_SAY)
+					monster:unregisterEvent('OberonImmunity')
+				else
+					monster:say("HAHAHAHA!", TALKTYPE_MONSTER_SAY)
+				end
 			end
 		end
 	end

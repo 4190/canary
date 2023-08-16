@@ -73,28 +73,28 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 28},
-	{id = 28569, chance = 900, maxCount = 8}, -- book page
-	{id = 28570, chance = 900, maxCount = 7}, -- glowing rune
-	{name = "ultimate health potion", chance = 10000, maxCount = 7},
-	{name = "ultimate mana potion", chance = 10000, maxCount = 7},
-	{name = "energy ball", chance = 900, maxCount = 7},
-	{id = 28566, chance = 800, maxCount = 7}, -- silken bookmark
-	{name = "lightning pendant", chance = 500},
-	{name = "lightning boots", chance = 500},
-	{name = "lightning headband", chance = 500},
-	{name = "might ring", chance = 500},
-	{name = "spellweaver's robe", chance = 350},
-	{name = "wand of defiance", chance = 350},
-	{name = "haunted blade", chance = 550},
-	{name = "lightning legs", chance = 350}
+	{name = "Platinum Coin", chance = 75430, maxCount = 35 },
+	{name = "Glowing Rune", chance = 60390, maxCount = 6 },
+	{name = "Book Page", chance = 45420, maxCount = 8 },
+	{name = "Ultimate Mana Potion", chance = 15360, maxCount = 1 },
+	{name = "Silken Bookmark", chance = 12700, maxCount = 1 },
+	{name = "Energy Ball", chance = 11230, maxCount = 1 },
+	{name = "Ultimate Health Potion", chance = 11220, maxCount = 1 },
+	{name = "Lightning Headband", chance = 3090, maxCount = 1 },
+	{name = "Lightning Pendant", chance = 2610, maxCount = 1 },
+	{name = "Wand of Defiance", chance = 1790, maxCount = 1 },
+	{name = "Lightning Legs", chance = 1730, maxCount = 1 },
+	{name = "Might Ring", chance = 1710, maxCount = 1 },
+	{name = "Lightning Boots", chance = 1540, maxCount = 1 },
+	{name = "Spellweaver's Robe", chance = 850, maxCount = 1 },
+	{name = "Haunted Blade", chance = 620, maxCount = 1 },
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -100, maxDamage = -200},
-	{name ="combat", interval = 2000, chance = 14, type = COMBAT_ENERGYDAMAGE, minDamage = -200, maxDamage = -680, range = 7, shootEffect = CONST_ANI_ENERGY, target = false},
-	{name ="combat", interval = 2000, chance = 40, type = COMBAT_ENERGYDAMAGE, minDamage = -200, maxDamage = -505, radius = 3, effect = CONST_ME_ENERGYAREA, target = false},
-	{name ="combat", interval = 1500, chance = 30, type = COMBAT_PHYSICALDAMAGE, minDamage = -200, maxDamage = -700, length = 8, spread = 3, effect = CONST_ME_STUN, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -500},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -600, maxDamage = -750, range = 7, shootEffect = CONST_ANI_ENERGY, target = false},
+	{name ="combat", interval = 1500, chance = 12, type = COMBAT_ENERGYDAMAGE, minDamage = -800, maxDamage = -1000, radius = 3, effect = CONST_ME_ENERGYAREA, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_HOLYDAMAGE, minDamage = -650, maxDamage = -800, length = 6, spread = 0, effect = CONST_ME_STUN, target = false},
 }
 
 monster.defenses = {

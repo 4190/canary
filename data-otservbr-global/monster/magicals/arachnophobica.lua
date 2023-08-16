@@ -77,42 +77,43 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 14},
-	{name = "great spirit potion", chance = 100000, maxCount = 3},
-	{name = "essence of a bad dream", chance = 15000},
-	{id = 3051, chance = 12050}, -- energy ring
-	{name = "silver amulet", chance = 15000},
-	{id = 3091, chance = 11050}, -- sword ring
-	{name = "spider fangs", chance = 11800},
-	{name = "mind stone", chance = 17800},
-	{name = "wand of cosmic energy", chance = 17800},
-	{name = "magma amulet", chance = 8900},
-	{name = "elven amulet", chance = 8100, maxCount = 2},
-	{id = 23544, chance = 10590}, -- collar of red plasma
-	{name = "sacred tree amulet", chance = 7500},
-	{name = "spider silk", chance = 6500},
-	{id = 3052, chance = 5560}, -- life ring
-	{name = "orb", chance = 7800},
-	{name = "underworld rod", chance = 7120},
+	{name = "platinum coin", chance = 80000, maxCount = 13},
+	{name = "great spirit potion", chance = 30000, maxCount = 3},
+	{name = "spider fangs", chance = 10000},
+	{name = "essence of a bad dream", chance = 10000},
+	{name = "Silver Amulet", chance = 6000},
+	{id = 3091, chance = 5000}, -- sword ring
+	{name = "mind stone", chance = 5000},
+	{name = "wand of cosmic energy", chance = 5000},
+	{id = 3051, chance = 5000}, -- energy ring
+	{name = "elven amulet", chance = 3000, maxCount = 2},
+	{name = "underworld rod", chance = 3000},
+	{id = 3052, chance = 3000}, -- life ring
+	{id = 3092, chance = 3000}, -- axe ring
+	{id = 3050, chance = 3000}, -- power ring
+	{name = "magma amulet", chance = 2000},
+	{id = 6299, chance = 2000}, -- death ring
+	{name = "orb", chance = 2000},
+	{name = "sacred tree amulet", chance = 2000},
+	{name = "platinum amulet", chance = 2000},
+	{id = 23544, chance = 1000}, -- collar of red plasma
 	{id = 23529, chance = 1000}, -- ring of blue plasma
-	{id = 3098, chance = 9120}, -- ring of healing
-	{name = "strange talisman", chance = 8110},
-	{id = 3092, chance = 7220}, -- axe ring
-	{id = 3050, chance = 6080}, -- power ring
-	{id = 6299, chance = 7502}, -- death ring
-	{name = "garlic necklace", chance = 7550},
-	{name = "platinum amulet", chance = 7650},
-	{id = 23543, chance = 10590}, -- collar of green plasma
-	{name = "strange symbol", chance = 2640},
-	{name = "stone skin amulet", chance = 2600},
-	{name = "necklace of the deep", chance = 1800}
+	{name = "spider silk", chance = 1000},
+	{name = "garlic necklace", chance = 1000},
+	{name = "necklace of the deep", chance = 1800},
+	{id = 3098, chance = 1000}, -- ring of healing
+	{name = "stone skin amulet", chance = 1000},
+	{name = "strange symbol", chance = 1000},
+	{name = "strange talisman", chance = 1000},
+	{id = 23543, chance = 500}, -- collar of green plasma
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -350},
-	{name ="arachnophobicawavedice", interval = 2000, chance = 20, minDamage = -250, maxDamage = -350, target = false},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -400},
+	{name ="arachnophobicawavedice", interval = 2000, chance = 20, minDamage = -150, maxDamage = -300, target = false},
 	{name ="arachnophobicawaveenergy", interval = 2000, chance = 20, minDamage = -250, maxDamage = -350, target = false},
 	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -250, maxDamage = -350, radius = 4, effect = CONST_ME_BLOCKHIT, target = true},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -250, maxDamage = -350, range = 7, radius = 3, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true},
 	{name ="combat", interval = 2000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -200, maxDamage = -300, range = 7, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_SMALLCLOUDS, target = false}
 }
 

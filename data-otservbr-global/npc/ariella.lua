@@ -94,7 +94,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				Bring me a sample of the whisper beer, NOT the usual beer but whisper beer. I hope you are listening."
 			},
 			npc, creature)
-			player:setStorageValue(Storage.TheShatteredIsles.ReputationInSabrehaven, 11)
+			player:setStorageValue(Storage.TheShatteredIsles.ReputationInSabrehaven, 12)
 		elseif player:getStorageValue(Storage.TheShatteredIsles.ReputationInSabrehaven) == 12 then
 			npcHandler:say("Did you get a sample of the whisper beer from Carlin?", npc, creature)
 			npcHandler:setTopic(playerId, 4)
@@ -145,7 +145,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:getStorageValue(Storage.TheShatteredIsles.ReputationInSabrehaven) == 2 then
 				if player:removeItem(3600, 100) then
 					npcHandler:say("What a joy. At least for a few days adequate supply is ensured.", npc, creature)
-					player:setStorageValue(Storage.TheShatteredIsles.ReputationInSabrehaven, 3)
+					player:setStorageValue(Storage.TheShatteredIsles.ReputationInSabrehaven, 10)
 					npcHandler:setTopic(playerId, 0)
 				else
 					npcHandler:say("Come back when you got all neccessary items.", npc, creature)

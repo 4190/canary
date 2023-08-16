@@ -1,7 +1,7 @@
 local mType = Game.createMonsterType("Spiky Carnivor")
 local monster = {}
 
-monster.description = "a spiky carnivor"
+monster.description = "a Spiky Carnivor"
 monster.experience = 1650
 monster.outfit = {
 	lookType = 1139,
@@ -76,35 +76,37 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 6},
-	{name = "green glass plate", chance = 12000, maxCount = 17},
-	{name = "blue crystal splinter", chance = 11500},
-	{name = "brown crystal splinter", chance = 11000},
-	{name = "dark armor", chance = 10000},
-	{name = "guardian shield", chance = 9000},
-	{name = "rainbow quartz", chance = 8500},
-	{name = "blue robe", chance = 8000},
-	{name = "glacier amulet", chance = 7500},
-	{name = "lightning pendant", chance = 2200},
-	{name = "prismatic quartz", chance = 6500},
-	{name = "talon", chance = 6000},
-	{name = "terra amulet", chance = 5500},
-	{name = "warrior helmet", chance = 4000},
-	{name = "shockwave amulet", chance = 2550},
-	{name = "terra mantle", chance = 4050},
-	{name = "buckle", chance = 250},
-	{name = "doublet", chance = 250}
+	{name = "Platinum Coin", chance = 66230, maxCount = 6 }, 
+	{name = "Dark Armor", chance = 13650, maxCount = 1 }, 
+	{name = "Green Glass Plate", chance = 10710, maxCount = 2 }, 
+	{name = "Blue Crystal Splinter", chance = 8780, maxCount = 1 }, 
+	{name = "Brown Crystal Splinter", chance = 7030, maxCount = 1 }, 
+	{name = "Guardian Shield", chance = 4590, maxCount = 1 }, 
+	{name = "Warrior Helmet", chance = 2830, maxCount = 1 }, 
+	{name = "Rainbow Quartz", chance = 2210, maxCount = 2 }, 
+	{name = "Talon", chance = 2100, maxCount = 1 }, 
+	{name = "Glacier Amulet", chance = 1760, maxCount = 1 }, 
+	{name = "Terra Amulet", chance = 1640, maxCount = 1 }, 
+	{name = "Blue Robe", chance = 1590, maxCount = 1 }, 
+	{name = "Prismatic Quartz", chance = 1190, maxCount = 1 }, 
+	{name = "Lightning Pendant", chance = 960, maxCount = 1 }, 
+	{name = "Doublet", chance = 280, maxCount = 1 }, 
+	{name = "Terra Mantle", chance = 280, maxCount = 1 }, 
+	{name = "Buckle", chance = 170, maxCount = 1 }, 
+	{name = "Shockwave Amulet", chance = 110, maxCount = 1 }, 	
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -200, maxDamage = -400},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -230, maxDamage = -380, radius = 4, effect = CONST_ME_GROUNDSHAKER, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -100, maxDamage = -310},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -180, maxDamage = -230, radius = 3, effect = CONST_ME_GROUNDSHAKER, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -110, maxDamage = -170, length = 5, spread = 0, effect = CONST_ME_GROUNDSHAKER, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -190, maxDamage = -230, length = 5, spread = 3, effect = CONST_ME_GROUNDSHAKER, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -100, maxDamage = -170, length = 5, spread = 0, effect = CONST_ME_POISONAREA, target = false},
 }
 
 monster.defenses = {
 	defense = 20,
 	armor = 71,
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_HEALING, minDamage = 150, maxDamage = 200, effect = CONST_ME_MAGIC_BLUE, target = false}
 }
 
 monster.reflects = {

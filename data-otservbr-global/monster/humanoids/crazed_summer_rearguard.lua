@@ -1,7 +1,7 @@
 local mType = Game.createMonsterType("Crazed Summer Rearguard")
 local monster = {}
 
-monster.description = "a crazed summer rearguard"
+monster.description = "a Crazed Summer Rearguard"
 monster.experience = 4700
 monster.outfit = {
 	lookType = 1136,
@@ -78,31 +78,28 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "power bolt", chance = 1000000},
-	{name = "small enchanted sapphire", chance = 790, maxCount = 2},
-	{name = "platinum coin", chance = 85000, maxCount = 11},
+	{name = "Platinum Coin", chance = 85060, maxCount = 11 }, 
 	{id = 5921, chance = 10500}, -- heaven blossom
-	{name = "dream essence egg", chance = 8500},
-	{name = "elvish talisman", chance = 7200},
-	{name = "violet crystal shard", chance = 4500},
-	{name = "small enchanted ruby", chance = 6000},
-	{name = "red crystal fragment", chance = 4500},
-	{name = "leaf star", chance = 4000, maxCount = 8},
+	{name = "Dream Essence Egg", chance = 8230, maxCount = 1 }, 
+	{name = "Elvish Talisman", chance = 7200, maxCount = 1 }, 
+	{name = "Small Enchanted Ruby", chance = 5990, maxCount = 1 }, 
+	{name = "Red Crystal Fragment", chance = 4520, maxCount = 1 }, 
+	{name = "Violet Crystal Shard", chance = 4400, maxCount = 1 }, 
+	{name = "Leaf Star", chance = 4100, maxCount = 8 }, 
 	{id = 23529, chance = 2500}, -- ring of blue plasma
-	{name = "sun fruit", chance = 890},
+	{name = "Wood Cape", chance = 1260, maxCount = 1 }, 
+	{name = "Yellow Gem", chance = 1050, maxCount = 1 }, 
 	{id = 23542, chance = 900},-- collar of blue plasma
-	{name = "wood cape", chance = 1300},
-	{name = "small diamond", chance = 600},
-	{name = "yellow gem", chance = 1000},
-	{name = "crystal crossbow", chance = 500}
+	{name = "Sun Fruit", chance = 890, maxCount = 1 }, 
+	{name = "Small Enchanted Sapphire", chance = 780, maxCount = 2 }, 
+	{name = "Small Diamond", chance = 580, maxCount = 1 }, 
+	{name = "Crystal Crossbow", chance = 470, maxCount = 1 }, 
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -210, maxDamage = -530},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -270, maxDamage = -710, length = 3, spread = 0, effect = CONST_ME_FIREAREA, target = false},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -250, maxDamage = -300, range = 7, shootEffect = CONST_ANI_FIRE, target = false},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -350, maxDamage = -380, radius = 5, effect = CONST_ME_EXPLOSIONHIT, target = true},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -200, maxDamage = -350, radius = 5, effect = CONST_ME_EXPLOSIONAREA, target = true}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -450},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -150, maxDamage = -300, range = 7, shootEffect = CONST_ANI_FIRE, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -250, maxDamage = -300, range = 5, radius = 3, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_HITBYFIRE, target = true}
 }
 
 monster.defenses = {

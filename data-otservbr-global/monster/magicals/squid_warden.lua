@@ -73,29 +73,35 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 11000, maxCount = 57},
-	{name = "glowing rune", chance = 800, maxCount = 4},
-	{name = "small sapphire", chance = 900, maxCount = 4},
-	{name = "frosty heart", chance = 11000, maxCount = 4},
-	{id = 7441, chance = 20000}, -- ice cube
-	{id = 28568, chance = 20000}, -- inkwell
-	{name = "ultimate health potion", chance = 10003, maxCount = 4},
-	{name = "ultimate mana potion", chance = 10003, maxCount = 4},
-	{name = "ice rapier", chance = 500},
-	{name = "glacier mask", chance = 400},
-	{name = "piece of dead brain", chance = 10001, maxCount = 4},
-	{name = "crystal sword", chance = 300},
-	{name = "glacier robe", chance = 150},
-	{name = "glacier kilt", chance = 150},
-	{name = "slime heart", chance = 10002, maxCount = 4}
+	{name = "Small Sapphire", chance = 68040, maxCount = 3 }, 
+	{name = "Platinum Coin", chance = 50440, maxCount = 50 }, 
+	{name = "Glowing Rune", chance = 35460, maxCount = 6 }, 
+	{name = "Frosty Heart", chance = 22710, maxCount = 1 }, 
+	{name = "Ultimate Mana Potion", chance = 17410, maxCount = 1 }, 
+	{id = 28568, chance = 15000}, -- inkwell, 
+	{name = "Ultimate Health Potion", chance = 15540, maxCount = 1 }, 
+	{id = 7441, chance = 15000}, -- ice cube
+	{name = "Glacier Mask", chance = 7930, maxCount = 1 }, 
+	{name = "Ice Rapier", chance = 5210, maxCount = 1 }, 
+	{name = "Crystal Mace", chance = 5020, maxCount = 1 }, 
+	{name = "Crystal Sword", chance = 4520, maxCount = 1 }, 
+	{name = "Slime Heart", chance = 4310, maxCount = 1 }, 
+	{name = "Diamond Sceptre", chance = 4050, maxCount = 1 }, 
+	{name = "Piece of Dead Brain", chance = 4030, maxCount = 1 }, 
+	{name = "Glacier Kilt", chance = 2720, maxCount = 1 }, 
+	{name = "Glacier Robe", chance = 2350, maxCount = 1 }, 
+	{name = "Sapphire Hammer", chance = 940, maxCount = 1 }, 
+	{name = "Glacial Rod", chance = 770, maxCount = 1 }, 
+	{name = "Crystalline Armor", chance = 660, maxCount = 1 }, 
+	{name = "Leviathan's Amulet", chance = 280, maxCount = 1 }, 
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -100, maxDamage = -300},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_ICEDAMAGE, minDamage = -100, maxDamage = -200, range = 7, shootEffect = CONST_ANI_ICE, target = false},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -200, maxDamage = -680, range = 7, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICEATTACK, target = false},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -200, maxDamage = -375, length = 3, spread = 2, effect = CONST_ME_ICEATTACK, target = false},
-	{name ="combat", interval = 2000, chance = 12, type = COMBAT_ICEDAMAGE, minDamage = -230, maxDamage = -480, range = 7, radius = 3, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICETORNADO, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -900},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -600, maxDamage = -900, range = 7, shootEffect = CONST_ANI_ICE, effect = CONST_ME_ICEATTACK, target = false}, 
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -600, maxDamage = -900, radius = 3, effect = CONST_ME_ICEATTACK, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -500, maxDamage = -700, range = 5, radius = 3, shootEffect = CONST_ANI_SNOWBALL, effect = CONST_ME_SMOKE, target = true},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -500, maxDamage = -700, length = 5, spread = 0, effect = CONST_ME_SOUND_BLUE, target = false},
 }
 
 monster.defenses = {

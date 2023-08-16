@@ -73,39 +73,40 @@ monster.voices = {
 }
 
 monster.loot = {
-	{id = 3031, chance = 97000, maxCount = 242}, -- gold coin
-	{id = 3035, chance = 18200, maxCount = 6}, -- platinum coin
-	{id = 6558, chance = 2000}, -- flask of demonic blood
-	{id = 238, chance = 2000}, -- great mana potion
-	{id = 3033, chance = 210, maxCount = 3}, -- small amethyst
-	{id = 3028, chance = 300, maxCount = 3}, -- small diamond
-	{id = 3032, chance = 300, maxCount = 3}, -- small emerald
-	{id = 3030, chance = 350, maxCount = 3}, -- small ruby
-	{id = 9057, chance = 280, maxCount = 3}, -- small topaz
-	{id = 3041, chance = 400}, -- blue gem
-	{id = 6299, chance = 460}, -- death ring
-	{id = 6499, chance = 430}, -- demonic essence
-	{id = 8043, chance = 520}, -- focus cape
-	{id = 21974, chance = 800}, -- golden lotus brooch
-	{id = 826, chance = 400}, -- magma coat
-	{id = 3078, chance = 400}, -- mysterious fetish
-	{id = 3574, chance = 400}, -- mystic turban
-	{id = 21981, chance = 400}, -- oriental shoes
-	{id = 21975, chance = 600}, -- peacock feather fan
-	{id = 5911, chance = 300}, -- red piece of cloth
-	{id = 3016, chance = 400}, -- ruby necklace
-	{id = 5944, chance = 400}, -- soul orb
-	{id = 8074, chance = 400}, -- spellbook of mind control
-	{id = 3071, chance = 400} -- wand of inferno
+	{name = "Platinum Coin", chance = 100000, maxCount = 12 }, 
+	{name = "Flask of Demonic Blood", chance = 30110, maxCount = 1 }, 
+	{name = "Golden Lotus Brooch", chance = 22400, maxCount = 1 }, 
+	{name = "Demonic Essence", chance = 22110, maxCount = 1 }, 
+	{name = "Peacock Feather Fan", chance = 21460, maxCount = 1 }, 
+	{name = "Soul Orb", chance = 20140, maxCount = 1 }, 
+	{name = "Small Emerald", chance = 18010, maxCount = 5 }, 
+	{name = "Great Mana Potion", chance = 16560, maxCount = 2 }, 
+	{name = "Small Ruby", chance = 11890, maxCount = 3 }, 
+	{name = "Small Enchanted Ruby", chance = 9440, maxCount = 3 }, 
+	{name = "Small Topaz", chance = 8560, maxCount = 2 }, 
+	{name = "Small Diamond", chance = 7500, maxCount = 2 }, 
+	{name = "Small Amethyst", chance = 6810, maxCount = 2 }, 
+	{name = "Crystal Coin", chance = 4670, maxCount = 1 }, 
+	{name = "Ruby Necklace", chance = 4330, maxCount = 1 }, 
+	{name = "Royal Star", chance = 4050, maxCount = 3 }, 
+	{id = 3039, chance = 3800, maxCount = 1 }, --red gem
+	{name = "Mystic Turban", chance = 3170, maxCount = 1 }, 
+	{name = "Oriental Shoes", chance = 3110, maxCount = 1 }, 
+	{name = "Red Piece of Cloth", chance = 3070, maxCount = 1 }, 
+	{name = "Mysterious Fetish", chance = 2820, maxCount = 1 }, 
+	{name = "Blue Gem", chance = 2600, maxCount = 1 }, 
+	{name = "Focus Cape", chance = 2200, maxCount = 1 }, 
+	{name = "Magma Coat", chance = 1980, maxCount = 1 }, 
+	{name = "Wand of Inferno", chance = 1440, maxCount = 1 }, 
+	{name = "Spellbook of Mind Control", chance = 1220, maxCount = 1 }, 
+	{id = 6299, chance = 1100}, -- death ring	
 }
 
 monster.attacks = {
 	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -700},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -50, maxDamage = -300, range = 7, target = false},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -50, maxDamage = -200, length = 4, spread = 2, effect = CONST_ME_MAGIC_RED, target = false},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -450, maxDamage = -830, length = 1, spread = 0, effect = CONST_ME_HITBYFIRE, target = false},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -550, maxDamage = -750, radius = 3, effect = CONST_ME_MORTAREA, target = true},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -550, maxDamage = -750, radius = 4, effect = CONST_ME_BLACKSMOKE, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -550, maxDamage = -750, range = 5, radius = 3, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA, target = true},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -450, maxDamage = -830, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_HITBYFIRE, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -50, maxDamage = -300, length = 5, spread = 0, effect = CONST_ME_MAGIC_RED, target = false},
 	{name ="speed", interval = 2000, chance = 15, speedChange = -100, radius = 1, effect = CONST_ME_MAGIC_RED, target = true, duration = 30000}
 }
 

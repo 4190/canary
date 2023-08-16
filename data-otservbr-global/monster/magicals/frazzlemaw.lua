@@ -80,45 +80,45 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "platinum coin", chance = 100000, maxCount = 7},
-	{name = "banana skin", chance = 9500},
-	{name = "piece of iron", chance = 10400},
-	{name = "fishbone", chance = 10000},
-	{id = 3114, chance = 12680}, -- skull
-	{id = 3115, chance = 10000}, -- bone
-	{id = 3116, chance = 5500}, -- big bone
-	{name = "two handed sword", chance = 3200},
-	{id = 3578, chance = 6750, maxCount = 3}, -- fish
-	{name = "ham", chance = 6000, maxCount = 2},
-	{name = "iron ore", chance = 3000},
-	{name = "fish fin", chance = 4700},
-	{name = "hardened bone", chance = 5000},
-	{id = 5951, chance = 10800}, -- fish tail
-	{name = "assassin dagger", chance = 1000},
-	{name = "haunted blade", chance = 2240},
-	{name = "nightmare blade", chance = 1100},
-	{name = "great mana potion", chance = 15000, maxCount = 3},
-	{name = "great health potion", chance = 15000, maxCount = 2},
-	{name = "gold ingot", chance = 2300},
-	{name = "sai", chance = 1460},
-	{name = "violet crystal shard", chance = 3000},
-	{name = "brown crystal splinter", chance = 16000},
-	{name = "red crystal fragment", chance = 7600},
-	{id = 16279, chance = 10000}, -- crystal rubbish
-	{name = "cluster of solace", chance = 450},
-	{name = "frazzle tongue", chance = 18760},
-	{name = "frazzle skin", chance = 16000}
+	{name = "Platinum Coin", chance = 90460, maxCount = 7 }, 
+	{name = "Gold Coin", chance = 78500, maxCount = 100 }, 
+	{name = "Frazzle Tongue", chance = 14760, maxCount = 1 }, 
+	{name = "Frazzle Skin", chance = 12340, maxCount = 1 }, 
+	{name = "Great Mana Potion", chance = 11990, maxCount = 3 }, 
+	{name = "Great Health Potion", chance = 11960, maxCount = 2 }, 
+	{name = "Brown Crystal Splinter", chance = 11880, maxCount = 1 }, 
+	{id = 3114, chance = 10400}, -- skull
+	{name = "Fishbone", chance = 9460, maxCount = 1 },
+	{id = 5951, chance = 9400}, -- fish tail
+	{id = 3115, chance = 9200}, -- bone
+	{name = "Piece of Iron", chance = 7980, maxCount = 1 }, 
+	{name = "Crystal Rubbish", chance = 7930, maxCount = 1 }, 
+	{name = "Remains of a Fish", chance = 7710, maxCount = 1 }, 
+	{name = "Banana Skin", chance = 7240, maxCount = 1 }, 
+	{id = 3578, chance = 5000, maxCount = 3}, -- fish
+	{name = "Fish Fin", chance = 4610, maxCount = 1 }, 
+	{name = "Ham", chance = 4580, maxCount = 1 }, 
+	{name = "Red Crystal Fragment", chance = 4470, maxCount = 1 }, 
+	{name = "Hardened Bone", chance = 4170, maxCount = 1 }, 
+	{name = "Big Bone", chance = 3480, maxCount = 1 }, 
+	{name = "Iron Ore", chance = 2660, maxCount = 1 }, 
+	{name = "Violet Crystal Shard", chance = 2470, maxCount = 1 }, 
+	{name = "Two Handed Sword", chance = 2190, maxCount = 1 }, 
+	{name = "Gold Ingot", chance = 1920, maxCount = 1 }, 
+	{name = "Haunted Blade", chance = 1540, maxCount = 1 }, 
+	{name = "Sai", chance = 1070, maxCount = 1 }, 
+	{name = "Nightmare Blade", chance = 600, maxCount = 1 }, 
+	{name = "Assassin Dagger", chance = 410, maxCount = 1 }, 
+	{name = "Cluster of Solace", chance = 410, maxCount = 1 }, 
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -400},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -450},
 	-- bleed
-	{name ="condition", type = CONDITION_BLEEDING, interval = 2000, chance = 10, minDamage = -300, maxDamage = -400, radius = 3, target = false},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -700, length = 5, spread = 3, effect = CONST_ME_EXPLOSIONAREA, target = false},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -400, radius = 2, shootEffect = CONST_ANI_LARGEROCK, effect = CONST_ME_STONES, target = true},
+	{name ="condition", type = CONDITION_BLEEDING, interval = 2000, chance = 10, minDamage = -35, maxDamage = -35, radius = 3, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -350, maxDamage = -600, length = 5, spread = 0, effect = CONST_ME_EXPLOSIONAREA, target = false},
+	{name ="combat", interval = 1500, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -300, maxDamage = -500, radius = 3, effect = CONST_ME_DRAWBLOOD, target = false},
 	{name ="speed", interval = 2000, chance = 15, speedChange = -600, radius = 5, effect = CONST_ME_MAGIC_RED, target = false, duration = 15000},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -80, maxDamage = -150, radius = 4, effect = CONST_ME_MAGIC_RED, target = false}
 }
 
 monster.defenses = {

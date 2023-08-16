@@ -73,40 +73,41 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 8},
-	{name = "book page", chance = 100000, maxCount = 3},
-	{name = "small diamond", chance = 100000, maxCount = 8},
-	{name = "small sapphire", chance = 100000, maxCount = 8},
-	{name = "quill", chance = 100000, maxCount = 8},
-	{name = "ultimate health potion", chance = 100000, maxCount = 8},
-	{name = "ultimate mana potion", chance = 100000, maxCount = 8},
-	{name = "diamond sceptre", chance = 100000},
-	{name = "frosty heart", chance = 100000, maxCount = 8},
-	{name = "glacier mask", chance = 350},
-	{name = "ice rapier", chance = 250},
-	{name = "silken bookmark", chance = 100000, maxCount = 8},
-	{name = "crystal mace", chance = 250},
-	{name = "glacier kilt", chance = 250},
-	{name = "glacier robe", chance = 250},
-	{name = "glacier shoes", chance = 350},
-	{name = "strange helmet", chance = 1000},
-	{name = "sapphire hammer", chance = 300},
-	{id = 7441, chance = 100000}, -- ice cube
-	{name = "glacial rod", chance = 150},
-	{name = "crystalline armor", chance = 250}
+	{name = "Platinum Coin", chance = 91090, maxCount = 5 }, 
+	{name = "Book Page", chance = 62150, maxCount = 1 }, 
+	{name = "Small Diamond", chance = 45850, maxCount = 1 }, 
+	{name = "Small Sapphire", chance = 27230, maxCount = 9 }, 
+	{name = "Ice Rapier", chance = 21100, maxCount = 1 }, 
+	{name = "Ultimate Mana Potion", chance = 21100, maxCount = 1 }, 
+	{name = "Ultimate Health Potion", chance = 18600, maxCount = 1 }, 
+	{name = "Quill", chance = 18230, maxCount = 1 }, 
+	{name = "Silken Bookmark", chance = 17220, maxCount = 1 }, 
+	{name = "Glacier Mask", chance = 13520, maxCount = 1 }, 
+	{name = "Frosty Heart", chance = 12750, maxCount = 1 }, 
+	{name = "Diamond Sceptre", chance = 6380, maxCount = 1 }, 
+	{name = "Glacier Kilt", chance = 4820, maxCount = 1 }, 
+	{id = 7441, chance = 5000}, -- ice cube
+	{name = "Glacier Shoes", chance = 3400, maxCount = 1 }, 
+	{name = "Crystal Mace", chance = 2650, maxCount = 1 }, 
+	{name = "Glacier Robe", chance = 1740, maxCount = 1 }, 
+	{name = "Sapphire Hammer", chance = 1710, maxCount = 1 }, 
+	{name = "Strange Helmet", chance = 1680, maxCount = 1 }, 
+	{name = "Crystalline Armor", chance = 880, maxCount = 1 }, 
+	{name = "Glacial Rod", chance = 560, maxCount = 1 }, 
+	{name = "Leviathan's Amulet", chance = 130, maxCount = 1 }, 
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -100, maxDamage = -200},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -700, maxDamage = -850, range = 7, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICEATTACK, target = false},
-	{name ="combat", interval = 1000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -100, maxDamage = -380, range = 7, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICEATTACK, target = false},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_ICEDAMAGE, minDamage = -350, maxDamage = -980, length = 5, spread = 3, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICEATTACK, target = false},
-	{name ="combat", interval = 1000, chance = 12, type = COMBAT_ICEDAMAGE, minDamage = -230, maxDamage = -880, range = 7, radius = 3, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICETORNADO, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -850},
+	{name ="combat", interval = 1000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -600, maxDamage = -800, range = 7, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICEATTACK, target = false},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_ICEDAMAGE, minDamage = -750, maxDamage = -1300, length = 5, spread = 0, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICEATTACK, target = false},
+	{name ="combat", interval = 1000, chance = 12, type = COMBAT_ICEDAMAGE, minDamage = -650, maxDamage = -950, range = 7, radius = 3, shootEffect = CONST_ANI_SMALLICE, effect = CONST_ME_ICETORNADO, target = false}
 }
 
 monster.defenses = {
 	defense = 40,
-	armor = 82
+	armor = 82,
+	{name ="combat", interval = 2000, chance = 20, type = COMBAT_HEALING, minDamage = 200, maxDamage = 350, effect = CONST_ME_HITBYPOISON, target = false}
 }
 
 monster.elements = {

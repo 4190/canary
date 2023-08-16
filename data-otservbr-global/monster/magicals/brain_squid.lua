@@ -73,39 +73,42 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "violet crystal shard", chance = 900, maxCount = 4},
-	{name = "platinum coin", chance = 100000, maxCount = 12},
-	{name = "glowing rune", chance = 900, maxCount = 4},
-	{name = "instable proto matter", chance = 1200, maxCount = 4},
-	{name = "energy ball", chance = 1200, maxCount = 4},
-	{name = "energy bar", chance = 1200, maxCount = 4},
-	{name = "energy drink", chance = 1200, maxCount = 4},
-	{name = "odd organ", chance = 1200, maxCount = 4},
-	{name = "frozen lightning", chance = 1200, maxCount = 4},
-	{id = 28568, chance = 1200, maxCount = 3}, -- inkwell
-	{name = "small ruby", chance = 1200, maxCount = 4},
-	{name = "violet gem", chance = 1200, maxCount = 4},
-	{name = "blue crystal splinter", chance = 1200, maxCount = 4},
-	{name = "cyan crystal fragment", chance = 1200, maxCount = 4},
-	{name = "ultimate mana potion", chance = 1200, maxCount = 4},
-	{name = "piece of dead brain", chance = 1200, maxCount = 4},
-	{name = "wand of defiance", chance = 800},
-	{name = "lightning headband", chance = 950},
-	{name = "lightning pendant", chance = 850},
-	{name = "might ring", chance = 1300},
-	{name = "slime heart", chance = 1200, maxCount = 4},
-	{id = 23544, chance = 560}, -- collar of red plasma
-	{id = 23542, chance = 560}, -- collar of blue plasma
-	{id = 23543, chance = 560}, -- collar of green plasma
-	{id = 23533, chance = 560}, -- ring of red plasma
-	{id = 23529, chance = 560}, -- ring of blue plasma
-	{id = 23531, chance = 560} -- ring of green plasma
+	{name = "violet crystal shard", chance = 35000, maxCount = 4},
+	{name = "platinum coin", chance = 75000, maxCount = 20},
+	{name = "glowing rune", chance = 25000, maxCount = 4},
+	{name = "instable proto matter", chance = 20000},
+	{name = "energy ball", chance = 20000},
+	{name = "energy bar", chance = 15000},
+	{name = "energy drink", chance = 15000},
+	{name = "odd organ", chance = 10000},
+	{name = "frozen lightning", chance = 12000},
+	{id = 28568, chance = 10000}, -- inkwell
+	{name = "ultimate mana potion", chance = 12000},
+	{name = "blue crystal splinter", chance = 7000},
+	{name = "small ruby", chance = 7000, maxCount = 6},
+	{name = "lightning headband", chance = 5000},
+	{name = "violet gem", chance = 5000},
+	{name = "cyan crystal fragment", chance = 4000},
+	{name = "piece of dead brain", chance = 1000},
+	{name = "wand of defiance", chance = 1000},
+	{name = "lightning pendant", chance = 2000},
+	{name = "might ring", chance = 2000},
+	{name = "slime heart", chance = 2000},
+	{id = 23544, chance = 1000}, -- collar of red plasma
+	{id = 23542, chance = 1000}, -- collar of blue plasma
+	{id = 23543, chance = 1000}, -- collar of green plasma
+	{id = 23533, chance = 3000}, -- ring of red plasma
+	{id = 23529, chance = 3000}, -- ring of blue plasma
+	{id = 23531, chance = 3000} -- ring of green plasma
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -100, maxDamage = -200},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -200, maxDamage = -470, range = 7, shootEffect = CONST_ANI_ENERGY, target = false},
-	{name ="combat", interval = 2000, chance = 13, type = COMBAT_ENERGYDAMAGE, minDamage = -200, maxDamage = -505, radius = 3, effect = CONST_ME_ENERGYAREA, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -700},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -700, maxDamage = -1000, range = 5, radius = 3, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA, target = true},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -600, maxDamage = -1100, range = 7, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA, target = false},
+	{name ="combat", interval = 2000, chance = 12, type = COMBAT_ENERGYDAMAGE, minDamage = -600, maxDamage = -900, radius = 3, effect = CONST_ME_ENERGYAREA, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_HOLYDAMAGE, minDamage = -400, maxDamage = -600, length = 5, spread = 0, effect = CONST_ME_HOLYAREA, target = false},
+	{name ="combat", interval = 1500, chance = 12, type = COMBAT_HOLYDAMAGE, minDamage = -800, maxDamage = -1000, radius = 3, effect = CONST_ME_HOLYAREA, target = false}, --exori 
 }
 
 monster.defenses = {

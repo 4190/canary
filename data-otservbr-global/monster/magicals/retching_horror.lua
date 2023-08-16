@@ -79,31 +79,33 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "platinum coin", chance = 100000, maxCount = 9},
-	{name = "fire sword", chance = 1240},
-	{name = "crown shield", chance = 1700},
-	{name = "tower shield", chance = 550},
-	{name = "brown mushroom", chance = 14000, maxCount = 2},
-	{name = "beastslayer axe", chance = 4260},
-	{name = "mercenary sword", chance = 2500},
-	{name = "spiked squelcher", chance = 410},
-	{name = "great mana potion", chance = 12500},
-	{name = "great health potion", chance = 15000},
-	{name = "underworld rod", chance = 1800},
-	{name = "wand of starstorm", chance = 960},
-	{id = 20029, chance = 3700}, -- broken dream
-	{name = "goosebump leather", chance = 16400},
-	{name = "pool of chitinous glue", chance = 14000}
+	{name = "Platinum Coin", chance = 83340, maxCount = 9 }, 
+	{name = "Gold Coin", chance = 80270, maxCount = 100 }, 
+	{name = "Goosebump Leather", chance = 13110, maxCount = 1 }, 
+	{name = "Great Mana Potion", chance = 11770, maxCount = 1 }, 
+	{name = "Great Health Potion", chance = 11640, maxCount = 1 }, 
+	{name = "Pool of Chitinous Glue", chance = 11510, maxCount = 1 }, 
+	{name = "Brown Mushroom", chance = 10900, maxCount = 2 }, 
+	{id = 20029, chance = 3700}, -- broken dream 
+	{name = "Beastslayer Axe", chance = 3880, maxCount = 1 }, 
+	{name = "Mercenary Sword", chance = 1940, maxCount = 1 }, 
+	{name = "Fire Sword", chance = 1810, maxCount = 1 }, 
+	{name = "Spiked Squelcher", chance = 1540, maxCount = 1 }, 
+	{name = "Underworld Rod", chance = 1340, maxCount = 1 }, 
+	{name = "Wand of Starstorm", chance = 1200, maxCount = 1 }, 
+	{name = "Crown Shield", chance = 940, maxCount = 1 }, 
+	{name = "Onyx Flail", chance = 940, maxCount = 1 }, 
+	{name = "Tower Shield", chance = 940, maxCount = 1 }, 
+	{name = "Butcher's Axe", chance = 470, maxCount = 1 }, 
+	{name = "Cluster of Solace", chance = 400, maxCount = 1 }, 
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -400},
-	{name ="drunk", interval = 2000, chance = 10, length = 4, spread = 3, effect = CONST_ME_MAGIC_GREEN, target = true, duration = 5000},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -500},
 	{name ="speed", interval = 2000, chance = 15, speedChange = -700, radius = 4, shootEffect = CONST_ANI_WHIRLWINDCLUB, effect = CONST_ME_STUN, target = true, duration = 15000},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -110, radius = 4, effect = CONST_ME_HITAREA, target = false},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -200, radius = 1, shootEffect = CONST_ANI_SNIPERARROW, target = true},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -200, maxDamage = -350, radius = 1, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREATTACK, target = true}
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -200, maxDamage = -450, length = 5, spread = 3, effect = CONST_ME_MAGIC_RED, target = false},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -300, range = 7, shootEffect = CONST_ANI_ARROW, effect = CONST_ME_DRAWBLOOD, target = false},
+	{name ="combat", interval = 1500, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -50, maxDamage = -350, radius = 4, effect = CONST_ME_GROUNDSHAKER, target = false},
 }
 
 monster.defenses = {

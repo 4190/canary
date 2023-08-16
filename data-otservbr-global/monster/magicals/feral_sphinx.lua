@@ -73,17 +73,24 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 100000, maxCount = 3},
-	{name = "wand of draconia", chance = 4770},
-	{name = "sphinx feather", chance = 3450},
-	{name = "fire axe", chance = 2650},
-	{id = 31438, chance = 3450}, -- sphinx tiara
-	{name = "magma legs", chance = 1860},
-	{name = "magma monocle", chance = 1590},
-	{name = "magma boots", chance = 2120},
-	{name = "magma amulet", chance = 7160},
-	{name = "wand of inferno", chance = 7690},
-	{name = "dragon necklace", chance = 800}
+	{name = "Platinum Coin", chance = 100000, maxCount = 3 }, 
+	{name = "Cyan Crystal Fragment", chance = 9020, maxCount = 1 }, 
+	{id = 3039, chance = 8270, maxCount = 1 }, --red gem
+	{name = "Green Crystal Shard", chance = 7190, maxCount = 1 }, 
+	{name = "Dragon Necklace", chance = 7170, maxCount = 1 }, 
+	{name = "Magma Amulet", chance = 6510, maxCount = 1 }, 
+	{name = "Sphinx Feather", chance = 5970, maxCount = 1 }, 
+	{name = "Wand of Inferno", chance = 5860, maxCount = 1 }, 
+	{name = "Small Sapphire", chance = 5310, maxCount = 2 }, 
+	{name = "Sphinx Tiara", chance = 4520, maxCount = 1 }, 
+	{name = "Wand of Draconia", chance = 4380, maxCount = 1 }, 
+	{name = "Blue Gem", chance = 4270, maxCount = 1 }, 
+	{name = "Fire Axe", chance = 3550, maxCount = 1 }, 
+	{name = "Magma Boots", chance = 1790, maxCount = 1 }, 
+	{name = "Magma Monocle", chance = 1560, maxCount = 1 }, 
+	{name = "Green Gem", chance = 1540, maxCount = 1 }, 
+	{name = "Magma Legs", chance = 1400, maxCount = 1 }, 
+	{name = "Small Enchanted Emerald", chance = 1240, maxCount = 2 },
 }
 
 monster.attacks = {

@@ -76,29 +76,30 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "gold coin", chance = 100000, maxCount = 100},
-	{name = "small emerald", chance = 11000, maxCount = 2},
-	{name = "small amethyst", chance = 12000, maxCount = 3},
-	{name = "platinum coin", chance = 100000, maxCount = 9},
-	{name = "blue robe", chance = 1500},
-	{name = "great mana potion", chance = 40000, maxCount = 2},
-	{name = "ultimate health potion", chance = 18000},
-	{name = "small topaz", chance = 16000, maxCount = 2},
-	{name = "blue crystal shard", chance = 11000},
-	{name = "blue crystal splinter", chance = 13000},
-	{name = "cyan crystal fragment", chance = 18000},
-	{name = "trapped bad dream monster", chance = 17000},
-	{name = "bowl of terror sweat", chance = 14000}
+	{name = "Gold Coin", chance = 100000, maxCount = 100 }, 
+	{name = "Platinum Coin", chance = 100000, maxCount = 9 }, 
+	{name = "Great Mana Potion", chance = 36320, maxCount = 2 }, 
+	{name = "Ultimate Health Potion", chance = 21020, maxCount = 1 }, 
+	{name = "Cyan Crystal Fragment", chance = 18080, maxCount = 1 }, 
+	{name = "Small Amethyst", chance = 16129,999999999998, maxCount = 3 }, 
+	{name = "Bowl of Terror Sweat", chance = 14680, maxCount = 1 }, 
+	{name = "Small Topaz", chance = 14050, maxCount = 3 }, 
+	{name = "Trapped Bad Dream Monster", chance = 12730, maxCount = 1 }, 
+	{name = "Small Ruby", chance = 12690, maxCount = 3 }, 
+	{name = "Blue Crystal Splinter", chance = 12310, maxCount = 1 }, 
+	{name = "Small Emerald", chance = 10820, maxCount = 3 }, 
+	{name = "Blue Crystal Shard", chance = 10320, maxCount = 1 }, 
+	{name = "Blue Robe", chance = 1370, maxCount = 1 }, 
+	{name = "Cluster of Solace", chance = 830, maxCount = 1 }, 
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -450},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -400},
 	-- poison
 	{name ="condition", type = CONDITION_POISON, interval = 2000, chance = 20, minDamage = -800, maxDamage = -1000, radius = 7, effect = CONST_ME_YELLOW_RINGS, target = false},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -70, maxDamage = -100, radius = 5, effect = CONST_ME_MAGIC_RED, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -60, maxDamage = -100, radius = 5, effect = CONST_ME_MAGIC_RED, target = false},
 	{name ="feversleep skill reducer", interval = 2000, chance = 10, target = false},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -250, maxDamage = -300, length = 6, spread = 3, effect = CONST_ME_YELLOWENERGY, target = true},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -150, maxDamage = -300, radius = 1, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true}
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -200, maxDamage = -400, radius = 1, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = true}
 }
 
 monster.defenses = {

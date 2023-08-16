@@ -80,40 +80,40 @@ monster.voices = {
 }
 
 monster.loot = {
-	{id = 3031, chance = 100000, maxCount = 100}, -- gold coin
-	{id = 3035, chance = 60000, maxCount = 1}, -- platinum coin
-	{id = 3110, chance = 5000}, -- piece of iron
-	{id = 3114, chance = 12680}, -- skull
-	{id = 3115, chance = 10000}, -- bone
-	{id = 3116, chance = 5500}, -- big bone
-	{id = 3578, chance = 6750, maxCount = 3}, -- fish
-	{id = 3582, chance = 6000, maxCount = 2}, -- ham
-	{id = 5880, chance = 3000}, -- iron ore
-	{id = 5895, chance = 5000}, -- fish fin
-	{id = 7418, chance = 350}, -- nightmare blade
-	{id = 238, chance = 10000, maxCount = 3}, -- great mana potion
-	{id = 239, chance = 10000, maxCount = 2}, -- great health potion
-	{id = 10389, chance = 300}, -- sai
-	{id = 20062, chance = 200}, -- cluster of solace
-	{id = 20198, chance = 12000}, -- frazzle tongue
-	{id = 20199, chance = 10500}, -- frazzle skin
-	{name = "fairy wings", chance = 15000}
+	{name = "Gold Coin", chance = 100000, maxCount = 100 }, 
+	{name = "Platinum Coin", chance = 60510, maxCount = 1 }, 
+	{name = "Fairy Wings", chance = 15080, maxCount = 1 }, 
+	{id = 3114, chance = 10400}, -- skull
+	{name = "Frazzle Tongue", chance = 11720, maxCount = 1 }, 
+	{name = "Frazzle Skin", chance = 10220, maxCount = 1 }, 
+	{id = 3115, chance = 9200}, -- bone
+	{name = "Great Mana Potion", chance = 9940, maxCount = 3 }, 
+	{name = "Great Health Potion", chance = 9910, maxCount = 2 }, 
+	{name = "Remains of a Fish", chance = 9850, maxCount = 1 }, 
+	{id = 3578, chance = 7000, maxCount = 3}, -- fish
+	{name = "Ham", chance = 6070, maxCount = 1 }, 
+	{name = "Big Bone", chance = 5270, maxCount = 1 }, 
+	{name = "Fish Fin", chance = 5050, maxCount = 1 }, 
+	{name = "Piece of Iron", chance = 4900, maxCount = 1 }, 
+	{name = "Iron Ore", chance = 2760, maxCount = 1 }, 
+	{name = "Nightmare Blade", chance = 340, maxCount = 1 }, 
+	{name = "Sai", chance = 300, maxCount = 1 }, 
+	{name = "Cluster of Solace", chance = 190, maxCount = 1 }, 	
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, skill = 90, attack = 80},
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -400},
 	-- bleed
-	{name ="condition", type = CONDITION_BLEEDING, interval = 2000, chance = 10, minDamage = -80, maxDamage = -200, radius = 3, target = false},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -200, length = 5, spread = 3, effect = CONST_ME_EXPLOSIONAREA, target = false},
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = 0, maxDamage = -100, radius = 2, shootEffect = CONST_ANI_LARGEROCK, effect = CONST_ME_STONES, target = true},
+	{name ="condition", type = CONDITION_BLEEDING, interval = 2000, chance = 10, minDamage = -35, maxDamage = -35, radius = 3, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -0, maxDamage = -500, length = 5, spread = 0, effect = CONST_ME_EXPLOSIONAREA, target = false},
+	{name ="combat", interval = 1500, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -0, maxDamage = -300, radius = 3, effect = CONST_ME_DRAWBLOOD, target = false},
 	{name ="speed", interval = 2000, chance = 15, speedChange = -600, radius = 5, effect = CONST_ME_MAGIC_RED, target = false, duration = 15000},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_MANADRAIN, minDamage = -80, maxDamage = -50, radius = 4, effect = CONST_ME_MAGIC_RED, target = false}
 }
 
 monster.defenses = {
 	defense = 30,
 	armor = 30,
-	{name ="combat", interval = 2000, chance = 15, type = COMBAT_HEALING, minDamage = 80, maxDamage = 225, effect = CONST_ME_HITBYPOISON, target = false}
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_HEALING, minDamage = 0, maxDamage = 50, effect = CONST_ME_HITBYPOISON, target = false}
 }
 
 monster.elements = {

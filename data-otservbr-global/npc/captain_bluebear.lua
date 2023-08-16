@@ -88,6 +88,7 @@ function(player)
 end)
 addTravelKeyword('oramond', 150, Position(33479, 31985, 7))
 addTravelKeyword('krailos', 230, Position(33492, 31712, 6))
+addTravelKeyword('rookgaard', 230, Position(32171, 32195, 7))
 
 -- Kick
 keywordHandler:addKeyword({'kick'}, StdModule.kick, {npcHandler = npcHandler, destination = {Position(32320, 32219, 6), Position(32321, 32210, 6)}})

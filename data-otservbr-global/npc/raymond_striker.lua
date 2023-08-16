@@ -79,7 +79,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.TheShatteredIsles.RaysMission1, 1)
 		elseif player:getStorageValue(Storage.TheShatteredIsles.RaysMission1) == 2 then
 			npcHandler:say("I think that means 'mission accomplished'. Hehe. I guess that will put an end to their efforts to buy any alchemical substance from Edron.", npc, creature)
-			player:setStorageValue(Storage.TheShatteredIsles.ReputationInSabrehaven, 15)
+			player:setStorageValue(Storage.TheShatteredIsles.ReputationInSabrehaven, 16)
 			player:setStorageValue(Storage.TheShatteredIsles.RaysMission1, 3)
 		elseif player:getStorageValue(Storage.TheShatteredIsles.RaysMission1) == 3 and player:getStorageValue(Storage.TheShatteredIsles.RaysMission2) < 1 then
 			npcHandler:say({
@@ -92,7 +92,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				'Try to make your way through the caves of Nargor to reach their harbour. This is where you will find the catapult in question.'
 			}, npc, creature)
 			player:setStorageValue(Storage.TheShatteredIsles.AccessToNargor, 1)
-			player:setStorageValue(Storage.TheShatteredIsles.RaysMission2, 1)
+			player:setStorageValue(Storage.TheShatteredIsles.RaysMission2, 2)
 		elseif player:getStorageValue(Storage.TheShatteredIsles.RaysMission2) == 2 and player:getStorageValue(Storage.TheShatteredIsles.ReputationInSabrehaven) == 16 then
 			npcHandler:say("You did it! Excellent!", npc, creature)
 			player:setStorageValue(Storage.TheShatteredIsles.ReputationInSabrehaven, 18)
@@ -115,7 +115,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			player:setStorageValue(Storage.TheShatteredIsles.ReputationInSabrehaven, 20)
 			player:setStorageValue(Storage.TheShatteredIsles.RaysMission3, 3)
-			player:setStorageValue(Storage.TheShatteredIsles.RaysMission4, 1)
+			player:setStorageValue(Storage.TheShatteredIsles.RaysMission4, 4)
 		elseif player:getStorageValue(Storage.TheShatteredIsles.RaysMission4) == 2 then
 			npcHandler:say("My pillow?? They know me all too well... <sigh> I've owned it since my childhood. However. Here, take it and convincehim that I am dead.", npc, creature)
 			player:addItem(6105, 1)

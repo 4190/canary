@@ -66,7 +66,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	local itemId = items[player:getVocation():getBaseId()]
 	if MsgContains(message, 'first rod') or MsgContains(message, 'first wand') then
 		if player:isMage() then
-			if player:getStorageValue(Storage.FirstMageWeapon) == -1 then
+			if player:getStorageValue(Storage.firstMageWeapon) == -1 then
 				npcHandler:say('So you ask me for a {' .. ItemType(itemId):getName() .. '} to begin your adventure?', npc, creature)
 				npcHandler:setTopic(playerId, 1)
 			else
@@ -79,7 +79,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		if npcHandler:getTopic(playerId) == 1 then
 			player:addItem(itemId, 1)
 			npcHandler:say('Here you are young adept, take care yourself.', npc, creature)
-			player:setStorageValue(Storage.FirstMageWeapon, 1)
+			player:setStorageValue(Storage.firstMageWeapon, 1)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, 'no') and npcHandler:getTopic(playerId) == 1 then
@@ -142,7 +142,11 @@ npcConfig.shop = {
 	{ itemName = "wand of cosmic energy", clientId = 3073, buy = 10000 },
 	{ itemName = "wand of decay", clientId = 3072, buy = 5000 },
 	{ itemName = "wand of dragonbreath", clientId = 3075, buy = 1000 },
-	{ itemName = "wand of vortex", clientId = 3074, buy = 500 }
+	{ itemName = "wand of vortex", clientId = 3074, buy = 500 },
+
+	{ itemName = "ultimate mana potion", clientId = 23373, buy = 438 },
+	{ itemName = "ultimate spirit potion", clientId = 23374, buy = 438 },
+	{ itemName = "supreme health potion", clientId = 23375, buy = 625 },
 }
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)

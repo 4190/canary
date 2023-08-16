@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 200000
-monster.maxHealth = 200000
+monster.health = 7600
+monster.maxHealth = 7600
 monster.race = "blood"
 monster.corpse = 6068
 monster.speed = 125
@@ -81,17 +81,16 @@ monster.loot = {
 	{name = "piggy bank", chance = 12800},
 	{name = "platinum coin", chance = 12000, maxCount = 10},
 	{name = "supreme health potion", chance = 12000, maxCount = 10},
-	{name = "ultimate mana potion", chance = 12000, maxCount = 20},
-	{name = "ice shield", chance = 600},
-	{name = "soul stone", chance = 300},
-	{name = "summerblade", chance = 500},
-	{name = "turquoise tendril lantern", chance = 300},
-	{name = "purple tendril lantern", chance = 300},
-	{name = "winterblade", chance = 500}
+	{name = "ultimate mana potion", chance = 12000, maxCount = 20}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -5}
+	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1000},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -400, maxDamage = -1000, length = 5, spread = 3, effect = CONST_ME_FIREAREA, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -400, maxDamage = -1000, length = 5, spread = 0, effect = CONST_ME_FIREAREA, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -400, maxDamage = -1000, length = 5, spread = 3, effect = CONST_ME_ICEAREA, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_ICEDAMAGE, minDamage = -400, maxDamage = -1000, length = 5, spread = 0, effect = CONST_ME_ICEAREA, target = false},
+
 }
 
 monster.defenses = {

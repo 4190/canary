@@ -57,7 +57,7 @@ monster.flags = {
 	runHealth = 0,
 	healthHidden = false,
 	isBlockable = false,
-	canWalkOnEnergy = false,
+	canWalkOnEnergy = true,
 	canWalkOnFire = true,
 	canWalkOnPoison = true
 }
@@ -73,29 +73,28 @@ monster.voices = {
 }
 
 monster.loot = {
-	{name = "platinum coin", chance = 89960, maxCount = 28},
-	{name = "book page", chance = 3000, maxCount = 7},
-	{name = "demonic essence", chance = 3000, maxCount = 5},
-	{name = "flask of demonic blood", chance = 3000, maxCount = 3},
-	{name = "small amethyst", chance = 2000, maxCount = 4},
-	{id = 3307, chance = 3000}, -- scimitar
-	{name = "silken bookmark", chance = 2000, maxCount = 2},
-	{name = "magma coat", chance = 2000},
-	{name = "guardian shield", chance = 1500},
-	{name = "soul orb", chance = 3000, maxCount = 4},
+	{name = "platinum coin", chance = 60000, maxCount = 35},
+	{name = "book page", chance = 50000, maxCount = 4},
+	{name = "demonic essence", chance = 20000, maxCount = 1},
+	{name = "flask of demonic blood", chance = 40000},
+	{name = "small amethyst", chance = 5000, maxCount = 7},
+	{id = 3307, chance = 5000}, -- scimitar
+	{name = "silken bookmark", chance = 20000},
+	{name = "magma coat", chance = 10000},
+	{name = "guardian shield", chance = 10000},
+	{name = "soul orb", chance = 5000},
 	{name = "necrotic rod", chance = 3000},
 	{name = "magma monocle", chance = 1500},
-	{id = 6299, chance = 1200}, -- death ring
+	{id = 6299, chance = 2000}, -- death ring
 	{id = 3049, chance = 1800}, -- stealth ring
-	{name = "shadow sceptre", chance = 8990}
+	{name = "shadow sceptre", chance = 500}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -200, maxDamage = -700},
-	{name ="combat", interval = 1000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -500, maxDamage = -780, range = 7, shootEffect = CONST_ANI_FLAMMINGARROW, effect = CONST_ME_HITBYFIRE, target = false},
-	{name ="combat", interval = 1500, chance = 12, type = COMBAT_PHYSICALDAMAGE, minDamage = -500, maxDamage = -900, radius = 3, effect = CONST_ME_EXPLOSIONAREA, target = false},
-	{name ="combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = -400, maxDamage = -850, length = 5, spread = 3, effect = CONST_ME_MAGIC_RED, target = false},
-	{name ="combat", interval = 2000, chance = 12, type = COMBAT_FIREDAMAGE, minDamage = -400, maxDamage = -775, radius = 3, effect = CONST_ME_HITBYFIRE, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -600},
+	{name ="combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -700, maxDamage = -950, range = 7, shootEffect = CONST_ANI_FLAMMINGARROW, effect = CONST_ME_HITBYFIRE, target = false},
+	{name ="combat", interval = 1500, chance = 12, type = COMBAT_FIREDAMAGE, minDamage = -650, maxDamage = -900, radius = 3, effect = CONST_ME_EXPLOSIONAREA, target = false},
+	{name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -700, maxDamage = -850, length = 5, spread = 0, effect = CONST_ME_MAGIC_RED, target = false},
 }
 
 monster.defenses = {
